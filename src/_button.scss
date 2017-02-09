@@ -1,0 +1,44 @@
+.button {
+	background-color: $button-bg-color;
+	border: 0;
+	border-radius: 5px;
+	color: $button-text-color;
+	cursor: pointer;
+	display: block;
+	font-family: $heading-font-family;
+	font-weight: bold;
+	margin: 0 0 $global-margin;
+	padding: $global-padding;
+	text-align: center;
+	text-transform: uppercase;
+	transition: background-color 200ms ease;
+	width: 100%;
+	&:hover {
+		background-color: $button-hover-bg-color;
+		text-decoration: none;
+	}
+}
+
+.close {
+	background-color: $white;
+	border: 0;
+	border-radius: 999px;
+	cursor: pointer;
+	color: $primary-color;
+	line-height: .9rem;
+	font-size: .9rem;
+	padding: 0;
+	position: absolute;
+	right: .5rem;
+	top: .5rem;
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+	&::before {
+		content: 'x ';
+		display: inline-block;
+		height: 16px;
+		margin-bottom: 5px;
+		font-family: Verdana, Geneva, sans-serif;
+	}
+}

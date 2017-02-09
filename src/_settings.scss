@@ -1,0 +1,17 @@
+$global-font-size: 14px !default;
+$body-font-color: #505d63 !default;
+$body-font-family: 'Roboto', sans-serif !default;
+$heading-font-family: 'Montserrat', sans-serif !default;
+$heading-color: #242d2f !default;
+$primary-color: #0093d5 !default;
+$button-text-color: #ffffff !default;
+$button-bg-color: #a762ac !default;
+$button-hover-bg-color: scale-color($button-bg-color, $lightness: -15%) !default;
+$white: #ffffff !default;
+$light-gray: #edf1f7 !default;
+$medium-gray: #c2c8d5 !default;
+$global-margin: $global-font-size !default;
+$global-padding: $global-font-size !default;
+$alert-color: #ec5840 !default;
+$success-color: #21b759 !default;
+$warning-color: #ffae00 !default;

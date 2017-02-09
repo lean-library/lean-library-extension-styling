@@ -1,0 +1,59 @@
+
+
+@import 'settings',
+'mixins',
+'normalize',
+'button',
+'header',
+'footer',
+'forms',
+'typography',
+'callout';
+
+* {
+	&,
+	&::before,
+	&::after {
+		box-sizing: border-box;
+	}
+}
+
+body {
+	color: $body-font-color;
+	font-family: $body-font-family;
+	font-size: $global-font-size;
+	line-height: 1.4;
+}
+
+.popup-container {
+	background: $white;
+	header img {
+		max-width: 280px;
+	}
+	&--content {
+		border: 1px solid $medium-gray;
+	}
+	&--options {
+		max-width: 337px;
+		margin: 20px auto;
+		border: 1px solid $medium-gray;
+	}
+}
+
+header {
+	background-color: $primary-color;
+}
+
+.padbox {
+	padding: 28px;
+	> *:last-child {
+		margin-bottom: 0;
+	}
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid $light-gray;
+	height: 0;
+	margin: 0;
+}

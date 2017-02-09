@@ -1,0 +1,149 @@
+form {
+	clear: both;
+	padding: 0;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+form, fieldset {
+	.button:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+// Input styles
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea,
+select {
+	border: 0;
+	border-bottom: 1px solid $light-gray;
+	font-family: $heading-font-family;
+	font-weight: bold;
+	margin-bottom: $global-margin;
+	padding: $global-padding / 2 0;
+	width: 100%;
+	&:focus {
+		border-bottom: 1px solid $light-gray;
+		outline: none;
+		& ~ .formcontrol__bar::after {
+			width: 50%;
+		}
+		& ~ .formcontrol__bar::before {
+			width: 50%;
+		}
+	}
+	&:-webkit-autofill {
+		background-color: $white !important;
+		box-shadow: 0 0 0 1000px $white inset;
+	}
+}
+
+input, textarea {
+	&::placeholder {
+		color: $medium-gray;
+		font-family: $body-font-family;
+		font-size: 13px;
+		font-weight: normal;
+	}
+}
+
+.formcontrol__bar {
+	display: block;
+	margin-top: -$global-margin;
+	position: relative;
+	top: -1px;
+	&::before {
+		left: 50%;
+	}
+	&::after {
+		right: 50%;
+	}
+	&::after,
+	&::before {
+		background: $primary-color;
+		bottom: 0;
+		content: '';
+		height: 2px;
+		position: absolute;
+		transition: all 300ms ease-out;
+		width: 0;
+	}
+}
+
+// Formcontrol
+.form-group {
+	@include clearfix;
+	margin-bottom: 2*$global-margin;
+	max-width: 500px;
+	position: relative;
+	&.fullwidth {
+		max-width: 100%;
+	}
+	&.required .control-label:after {
+		content: ' *';
+	}
+}
+
+input[type=number] {
+	width: auto;
+}
+
+// Select
+select {
+	max-width: 100%;
+	padding-right: 2 * $global-padding;
+}
+
+// Select ie9 appearance fix
+.ie9 select {
+	background-image: none;
+	padding-right: $global-padding / 2;
+}
+
+// Checkboxlist
+.checkboxlist {
+	&--horizontal {
+		.checkboxlist__innerlabel {
+			display: inline-block;
+			margin-right: 2 * $global-margin;
+		}
+	}
+}
+
+// Radiolist
+.radiolist {
+	&--horizontal {
+		.radiolist__innerlabel {
+			display: inline-block;
+			margin-right: 2 * $global-margin;
+		}
+	}
+}
+
+// Error message
+.error {
+	clear: both;
+	color: $alert-color;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 1.14286rem;
+	margin-top: .3rem;
+}

@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $heading-color;
+	font-family: $heading-font-family;
+	margin: 0 0 10px;
+}
+
+h1 { font-size: 18px; }
+
+h2 { font-size: 16px; }
+
+h3 { font-size: 14px; }
+
+header {
+	background-color: $primary-color;
+}
+
+a {
+	color: $primary-color;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+p, ul, ol {
+	margin: 0 0 $global-margin;
+}
