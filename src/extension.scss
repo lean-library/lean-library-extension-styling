@@ -27,16 +27,18 @@ body {
 
 .popup-container {
 	background: $white;
+	width: 336px;
 	header img {
 		max-width: 280px;
 	}
 	&--content {
 		border: 1px solid $medium-gray;
+		width: 338px;
 	}
 	&--options {
-		max-width: 337px;
-		margin: 20px auto;
 		border: 1px solid $medium-gray;
+		margin: 20px auto;
+		width: 338px;
 	}
 }
 
