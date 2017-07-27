@@ -23,7 +23,8 @@ body {
 	font-family: $body-font-family;
 	font-size: $global-font-size;
 	line-height: 1.4;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 .popup-container {
