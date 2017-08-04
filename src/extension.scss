@@ -27,6 +27,10 @@ body {
 	overflow-y: auto;
 }
 
+.contentcontainer {
+	position: relative;
+}
+
 .popup-container {
 	background: $white;
 	width: 336px;
