@@ -23,22 +23,40 @@
 	background-color: $white;
 	border: 0;
 	border-radius: 999px;
-	cursor: pointer;
 	color: $primary-color;
-	line-height: .9rem;
+	cursor: pointer;
 	font-size: .9rem;
+	height: 16px;
+	line-height: .9rem;
+	overflow: hidden;
 	padding: 0;
 	position: absolute;
 	right: .5rem;
 	top: .5rem;
-	height: 16px;
 	width: 16px;
-	overflow: hidden;
 	&::before {
 		content: 'x ';
 		display: inline-block;
+		font-family: Verdana, Geneva, sans-serif;
 		height: 16px;
 		margin-bottom: 5px;
-		font-family: Verdana, Geneva, sans-serif;
+	}
+}
+
+.iconbutton {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	height: 24px;
+	outline: none;
+	padding: 0;
+	width: 24px;
+	svg * {
+		fill: #999999;
+	}
+	&--settings {
+		position: absolute;
+		right: 5px;
+		top: 5px;
 	}
 }
