@@ -31,7 +31,8 @@ form, fieldset {
 [type='url'],
 [type='color'],
 textarea,
-select {
+select,
+.react-select .Select-control {
 	border: 0;
 	border-bottom: 1px solid $light-gray;
 	font-family: $heading-font-family;
