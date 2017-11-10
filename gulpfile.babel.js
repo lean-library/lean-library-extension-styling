@@ -12,8 +12,7 @@ gulp.task('styles', () => {
       precision: 10,
       includePaths: ['node_modules']
     }).on('error', $.sass.logError))
-    .pipe($.rename('lean.scss'))
-    .pipe(gulp.dest('../leanlibrary-extension/app/styles.scss/'));
+    .pipe(gulp.dest('../leanlibrary-extension/app/styles'));
 });
 //
 gulp.task('default', ['styles'], () => {
