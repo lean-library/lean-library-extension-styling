@@ -5,6 +5,7 @@ const $ = gulpLoadPlugins();
 gulp.task('styles', () => {
   return gulp.src([
     'src/extension.scss',
+    'src/beta.scss',
   ])
     .pipe($.plumber())
     .pipe($.sass.sync({
