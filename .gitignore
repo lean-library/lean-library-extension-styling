@@ -4,3 +4,4 @@ temp
 .tmp
 dist
 package
+package-lock.json
