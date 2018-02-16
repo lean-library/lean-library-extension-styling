@@ -7,3 +7,5 @@ Also in the leanlibrary-extension project run `$ gulp watch`.
 Pas de styling aan in het leanlibrary-extension-styling project en verhoog hier ook de versie in package.json. Deploy dit naar master.
 
 Ga naar het leanlibrary-extension en het leanlibrary-app project en doe bij beiden "npm install lean-library-extension-styling". Als het goed is wordt nu automatisch de versie in de package-lock.json geupdated.
+
+Als je dit live wil zetten, moet je ook in het leanlibrary-extension project de versie in app/manifest.json ophogen.
