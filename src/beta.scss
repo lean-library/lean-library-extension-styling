@@ -1,8 +1,8 @@
 @import 'settings';
 
 .header {
-	position: relative;
 	overflow: hidden;
+	position: relative;
 	&::before {
 		background: #000000;
 		color: #ffffff;
@@ -10,13 +10,13 @@
 		font-family: 'Arial', sans-serif;
 		font-size: 12px;
 		font-weight: bold;
+		left: -30px;
 		padding: 3px;
 		position: absolute;
-		right: -30px;
 		text-align: center;
 		text-transform: uppercase;
 		top: 10px;
-		transform: rotate(45deg);
+		transform: rotate(-45deg);
 		transform-origin: center;
 		width: 100px;
 	}
