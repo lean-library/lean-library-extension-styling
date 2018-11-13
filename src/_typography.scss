@@ -19,11 +19,11 @@ header {
 	background-color: $header-bg-color;
 }
 
-a {
+a:not(.button) {
 	color: $anchor-color;
-	text-decoration: none;
+	text-decoration: underline;
 	&:hover {
-		text-decoration: underline;
+		text-decoration: none;
 	}
 }
 
