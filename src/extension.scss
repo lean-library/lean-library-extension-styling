@@ -7,7 +7,8 @@
 'forms',
 'typography',
 'callout',
-'react-select';
+'react-select',
+'visibility';
 
 * {
 	&,
@@ -48,7 +49,7 @@ body {
 }
 
 header {
-	background-color: $primary-color;
+	background-color: $header-bg-color;
 }
 
 .padbox {

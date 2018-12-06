@@ -1,6 +1,6 @@
 {
   "name": "lean-library-extension-styling",
-  "version": "0.3.0",
+  "version": "0.4.4",
   "main": "src/**/*",
   "dependencies": {
     "react-select": "^1.0.0-rc.10"
