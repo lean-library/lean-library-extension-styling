@@ -20,21 +20,21 @@
 }
 
 .close {
-	background-color: $white;
-	border: 0;
-	border-radius: 999px;
-	color: $primary-color;
-	cursor: pointer;
-	height: 19px;
-	line-height: 1;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	right: .625rem;
-	top: .5rem;
-	width: 19px;
+  background-color: $white;
+  border: 0;
+  border-radius: 999px;
+  color: $primary-color;
+  cursor: pointer;
+  height: 19px;
+  line-height: 1;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  right: .625rem;
+  top: .5rem;
+  width: 19px;
   z-index: 99;
-	&::before {
+  &::before {
     content: '×';
     display: inline-block;
     font-family: Verdana, Geneva, sans-serif;
@@ -44,7 +44,7 @@
     margin-bottom: 5px;
     position: relative;
     top: -1px;
-	}
+  }
 }
 
 .iconbutton {
