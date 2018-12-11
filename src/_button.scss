@@ -1,67 +1,77 @@
 .button {
-	background-color: $button-bg-color;
-	border: 0;
-	border-radius: 5px;
-	color: $button-text-color;
-	cursor: pointer;
-	display: block;
-	font-family: $heading-font-family;
-	font-weight: bold;
-	margin: 0 0 $global-margin;
-	padding: $global-padding;
-	text-align: center;
-	text-transform: uppercase;
-	transition: background-color 200ms ease;
-	width: 100%;
-	&:hover {
-		background-color: $button-hover-bg-color;
-		text-decoration: none;
-	}
+  background-color: $button-bg-color;
+  border: 0;
+  border-radius: 5px;
+  color: $button-text-color;
+  cursor: pointer;
+  display: block;
+  font-family: $heading-font-family;
+  font-weight: bold;
+  margin: 0 0 $global-margin;
+  padding: $global-padding;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 200ms ease;
+  width: 100%;
+  &:hover {
+    background-color: $button-hover-bg-color;
+    text-decoration: none;
+  }
+  &--anchor-style {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    display: inline;
+    padding: 0;
+  }
 }
 
 .close {
-	background-color: $white;
-	border: 0;
-	border-radius: 999px;
-	color: $primary-color;
-	cursor: pointer;
-	font-size: .9rem;
-	height: 16px;
-	line-height: .9rem;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	right: .5rem;
-	top: .5rem;
-	width: 16px;
-	&::before {
-		content: 'x ';
-		display: inline-block;
-		font-family: Verdana, Geneva, sans-serif;
-		height: 16px;
-		margin-bottom: 5px;
-	}
+  background-color: $white;
+  border: 0;
+  border-radius: 999px;
+  color: $primary-color;
+  cursor: pointer;
+  height: 19px;
+  line-height: 1;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  right: .625rem;
+  top: .5rem;
+  width: 19px;
+  &::before {
+    content: '×';
+    display: inline-block;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    height: 19px;
+    margin-bottom: 5px;
+    position: relative;
+    top: -1px;
+  }
 }
 
 .iconbutton {
-	background: none;
-	border: 0;
-	cursor: pointer;
-	height: 24px;
-	padding: 0;
-	width: 24px;
-	svg * {
-		fill: #999999;
-	}
-	&--settings {
-		position: absolute;
-		right: 5px;
-		top: 5px;
-	}
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 24px;
+  padding: 0;
+  width: 24px;
+  svg * {
+    fill: #999999;
+  }
+  &--settings {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
 }
 
 .add-institute {
-	cursor: pointer;
-	display: block;
-	margin: -1rem 0 1rem 0;
+  cursor: pointer;
+  display: block;
+  margin: -1rem 0 1rem 0;
 }
