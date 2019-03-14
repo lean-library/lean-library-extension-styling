@@ -19,7 +19,8 @@ header {
 	background-color: $header-bg-color;
 }
 
-a:not(.button) {
+a:not(.button),
+.button--anchor-style {
 	color: $anchor-color;
 	text-decoration: underline;
 	&:hover {
@@ -29,4 +30,12 @@ a:not(.button) {
 
 p, ul, ol {
 	margin: 0 0 $global-margin;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.paragraph--no-margin {
+	margin-bottom: 0;
 }
