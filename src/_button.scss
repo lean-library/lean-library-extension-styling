@@ -19,6 +19,28 @@
     background-color: $button-hover-bg-color;
     text-decoration: none;
   }
+  &.small {
+    font-size: 95%;
+    padding: $global-padding / 2;
+  }
+  &.outlined {
+    color: $button-bg-color;
+    background-color: transparent;
+    border: 1px solid $button-bg-color;
+    &:hover,
+    &:focus {
+      color: $button-text-color;
+      background-color: $button-bg-color;
+    }
+  }
+  &--auto-width {
+    display: inline-block;
+    width: auto;
+  }
+  &--pause {
+    margin-top: 8px;
+    margin-left: 5px;
+  }
 }
 
 .close {
