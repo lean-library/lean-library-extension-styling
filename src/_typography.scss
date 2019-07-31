@@ -19,15 +19,24 @@ header {
   background-color: $header-bg-color;
 }
 
-a:not(.button) {
-  color: $anchor-color;
-  text-decoration: underline;
+a:not(.button),
+.button--anchor-style {
   @include link-new-window($anchor-color);
-  &:hover {
-    text-decoration: none;
-  }
+	color: $anchor-color;
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 p, ul, ol {
   margin: 0 0 $global-margin;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.paragraph--no-margin {
+	margin-bottom: 0;
 }
