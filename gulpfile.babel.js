@@ -6,6 +6,7 @@ gulp.task('styles', () => {
   return gulp.src([
     'src/extension.scss',
     'src/beta.scss',
+    'src/popup-skip-link.scss',
   ])
     .pipe($.plumber())
     .pipe($.sass.sync({
