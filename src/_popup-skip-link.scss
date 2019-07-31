@@ -1,0 +1,29 @@
+// Used to skip to extension popup with keyboard
+.popup-skip-link {
+	background: $white;
+	border: 0;
+	border-radius: 0 0 3px 3px;
+	clip: rect(0, 0, 0, 0);
+	color: $anchor-color;
+	display: inline-block;
+	font-family: Arial, sans-serif;
+	font-size: $global-font-size;
+	height: 1px;
+	left: 50%;
+	overflow: hidden;
+	padding: .25rem .5rem;
+	position: absolute;
+	top: 0;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	width: 1px;
+	z-index: 20;
+	&:active,
+	&:focus {
+		clip: auto;
+		height: auto;
+		overflow: visible;
+		white-space: normal;
+		width: auto;
+	}
+}
