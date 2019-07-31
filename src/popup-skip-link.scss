@@ -1,3 +1,5 @@
+@import 'settings';
+
 // Used to skip to extension popup with keyboard
 .popup-skip-link {
 	background: $white;
@@ -5,7 +7,7 @@
 	border-radius: 0 0 3px 3px;
 	clip: rect(0, 0, 0, 0);
 	color: $anchor-color;
-	display: inline-block;
+	display: inline-block !important; // Override inline-styles to prevent FAUC
 	font-family: Arial, sans-serif;
 	font-size: $global-font-size;
 	height: 1px;
@@ -17,10 +19,11 @@
 	transform: translateX(-50%);
 	white-space: nowrap;
 	width: 1px;
-	z-index: 20;
+	z-index: 999;
 	&:active,
 	&:focus {
 		clip: auto;
+		color: $anchor-color;
 		height: auto;
 		overflow: visible;
 		white-space: normal;
