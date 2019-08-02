@@ -15,7 +15,8 @@
   text-transform: uppercase;
   transition: background-color 200ms ease;
   width: 100%;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $button-hover-bg-color;
     text-decoration: none;
   }
@@ -37,10 +38,22 @@
     display: inline-block;
     width: auto;
   }
-  &--pause {
-    margin-top: 8px;
-    margin-left: 5px;
-  }
+	&--pause {
+		background: transparent;
+		color: $button-bg-color;
+		margin-left: 5px;
+		padding: 0;
+		position: relative;
+		top: 6px;
+		svg {
+			fill: currentColor;
+		}
+		&:hover,
+		&:focus {
+			background: transparent;
+			color: $button-hover-bg-color;
+		}
+	}
 }
 
 .close {
@@ -85,6 +98,12 @@
     position: absolute;
     right: 5px;
     top: 5px;
+  }
+  &:hover,
+  &:focus {
+    svg * {
+      fill: #737373;
+    }
   }
 }
 
