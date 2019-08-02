@@ -24,7 +24,8 @@ a:not(.button),
   @include link-new-window($anchor-color);
 	color: $anchor-color;
 	text-decoration: underline;
-	&:hover {
+	&:hover,
+	&:focus {
 		text-decoration: none;
 	}
 }
