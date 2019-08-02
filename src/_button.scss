@@ -98,6 +98,12 @@
     right: 5px;
     top: 5px;
   }
+  &:hover,
+  &:focus {
+    svg * {
+      fill: #737373;
+    }
+  }
 }
 
 .add-institute {
