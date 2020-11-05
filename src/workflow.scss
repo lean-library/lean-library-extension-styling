@@ -785,7 +785,7 @@
   display:none !important;
 }
 .workflow-extension-mark-as-read + label {
-  background: url('chrome-extension://__MSG_@@extension_id__/images/checkbox.svg') no-repeat center center / cover !important;
+  background: url('chrome-extension://__MSG_@@extension_id__/images/workflow/checkbox.svg') no-repeat center center / cover !important;
   height: 14px !important;
   width: 14px !important;
   display: inline-block !important;
@@ -799,7 +799,7 @@
 }
 
 .workflow-extension-mark-as-read:checked + label {
-  background: url('chrome-extension://__MSG_@@extension_id__/images/checkbox-checked.svg') no-repeat center center / cover !important;
+  background: url('chrome-extension://__MSG_@@extension_id__/images/workflow/checkbox-checked.svg') no-repeat center center / cover !important;
 }
 
 /* content */
@@ -857,7 +857,7 @@
 }
 .workflow-extension-quickmenu-right{
     width: 200px !important;
-    background: url('chrome-extension://__MSG_@@extension_id__/images/quickmenu-bg.svg') !important;
+    background: url('chrome-extension://__MSG_@@extension_id__/images/workflow/quickmenu-bg.svg') !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     -webkit-box-shadow: 0px 0px 7px 0px rgba(204,204,204,0.5) !important;
