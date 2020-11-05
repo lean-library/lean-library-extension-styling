@@ -442,7 +442,7 @@
 
 /* URL TRIGGERS ADD */
 /* buttons */
-.workflow-extension-triggers-add, 
+.workflow-extension-triggers-add,
 .workflow-extension-triggers-see-all {
   display: inline-flex !important;
   align-items: center !important;
@@ -456,12 +456,12 @@
   cursor: pointer !important;
 }
 
-.workflow-extension-triggers-add img, 
+.workflow-extension-triggers-add img,
 .workflow-extension-triggers-see-all img {
   margin-right: 5px !important;
 }
 
-.workflow-extension-triggers-add span, 
+.workflow-extension-triggers-add span,
 .workflow-extension-triggers-see-all span {
   font-family: 'Quicksand', sans-serif !important;
   font-size: 12px !important;
@@ -925,7 +925,7 @@
     color: #3eadfb !important;
 }
 .workflow-extension-quickmenu-right-content-item img{
-    margin-right: 8px 
+    margin-right: 8px
 }
 
 @-webkit-keyframes workflow-pulse {
@@ -937,9 +937,9 @@
  }
   100% {
   -webkit-transform: scale(1, 1);
- };
+ }
 }
- 
+
 @keyframes workflow-pulse {
   0% {
   transform: scale(1);
@@ -949,7 +949,7 @@
  }
   100% {
  transform: scale(1);
- };
+ }
 }
 .workflow-extension-quickmenu-right-content-item img.workflow-pulse{
   -webkit-animation: workflow-pulse 1s linear infinite;
@@ -1078,7 +1078,7 @@ animation: workflow-pulse 1s linear infinite;
 [data-workflow-survey-tooltip]:after {
   visibility: hidden !important;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)" !important;
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0) !important;
+  filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)" !important;
   opacity: 0 !important;
   pointer-events: none !important;
 }
@@ -1142,6 +1142,6 @@ animation: workflow-pulse 1s linear infinite;
 [data-workflow-survey-tooltip]:hover:after {
   visibility: initial !important;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100) !important;
+  filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
   opacity: 1 !important;
 }
