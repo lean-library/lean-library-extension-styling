@@ -7,6 +7,7 @@ gulp.task('styles', () => {
     'src/extension.scss',
     'src/beta.scss',
     'src/popup-skip-link.scss',
+    'src/workflow.scss',
   ])
     .pipe($.plumber())
     .pipe($.sass.sync({
@@ -14,7 +15,7 @@ gulp.task('styles', () => {
       precision: 10,
       includePaths: ['node_modules']
     }).on('error', $.sass.logError))
-    .pipe(gulp.dest('../leanlibrary-extension/app/styles'));
+    .pipe(gulp.dest('../lean-library-extension/app/styles'));
 });
 //
 gulp.task('default', ['styles'], () => {
