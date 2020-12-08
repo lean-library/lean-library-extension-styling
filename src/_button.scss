@@ -90,7 +90,7 @@
   cursor: pointer;
   height: 24px;
   padding: 0;
-  width: 90px;
+  width: 24px;
   svg * {
     fill: #999999;
   }
@@ -108,9 +108,11 @@
 }
 
 .settings-label {
-  padding: 4px;
+  position: absolute;
   font-size: 16px;
-  vertical-align: super;
+  padding: 2px;
+  top: 5px;
+  right: 29px;
 }
 
 .add-institute {
