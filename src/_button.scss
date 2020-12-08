@@ -107,13 +107,23 @@
   }
 }
 
-.settings-label {
+.settingslabel {
   position: absolute;
   font-size: 16px;
   padding: 2px;
   top: 5px;
   right: 29px;
   cursor: pointer;
+  &--button {
+    background: none;
+    border: 0;
+  }
+  &:hover,
+  &:focus {
+    svg * {
+      fill: #737373;
+    }
+  }
 }
 
 .add-institute {
