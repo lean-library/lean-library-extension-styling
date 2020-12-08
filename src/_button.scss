@@ -113,6 +113,7 @@
   padding: 2px;
   top: 5px;
   right: 29px;
+  color: #999999;
   cursor: pointer;
   &--button {
     background: none;
@@ -120,9 +121,7 @@
   }
   &:hover,
   &:focus {
-    svg * {
-      fill: #737373;
-    }
+    color: #737373;
   }
 }
 
