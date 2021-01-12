@@ -775,6 +775,10 @@
   flex-grow: 1 !important;
 }
 
+.workflow-extension-content-title:focus {
+  outline: none !important;
+}
+
 .workflow-extension-mark-as-read-wrapper {
   display: flex !important;
   width: 20px !important;
@@ -1144,4 +1148,59 @@ animation: workflow-pulse 1s linear infinite;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
   filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
   opacity: 1 !important;
+}
+
+a:active, a:hover, a:focus {
+  outline-width: 0 !important;
+}
+
+.workflow-extension-quickmenu-right-content-item {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.workflow-extension-quickmenu-right-content-item span {
+  width: auto !important;
+}
+
+.workflow-extension-big-popup-header-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  width: 107px !important;
+}
+
+@keyframes popup-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: popup-fade-in 1s 1;
+}
+
+@keyframes popup-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation: popup-fade-out 1s 1;
+}
+
+.collapse {
+  top: calc(25% + 20px);
+  z-index: 9999995;
+  height: 40px;
+}
+.left {
+  left: 3000px;
 }
