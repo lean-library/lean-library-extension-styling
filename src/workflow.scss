@@ -706,6 +706,10 @@
   font-size:14px !important;
   font-weight: 500 !important;
 }
+.workflow-extension-big-popup-header-close-wrapper a:active,
+.workflow-extension-big-popup-header-close-wrapper a:focus {
+  outline-width: 0 !important;
+}
 .workflow-extension-big-popup-header-text,
 .workflow-extension-big-popup-header-close {
   display: flex !important;
@@ -878,6 +882,10 @@
 }
 .workflow-extension-quickmenu-right-content{
     padding: 0px 12px !important;
+}
+.workflow-extension-quickmenu-right-content a:active,
+.workflow-extension-quickmenu-right-content a:focus{
+  outline-width: 0 !important;
 }
 .workflow-extension-quickmenu-right-content-item{
     display: flex !important;
@@ -1148,10 +1156,6 @@ animation: workflow-pulse 1s linear infinite;
   opacity: 1 !important;
 }
 
-a:active, a:hover, a:focus {
-  outline-width: 0 !important;
-}
-
 .workflow-extension-quickmenu-right-content-item {
   display: flex !important;
   flex-direction: row !important;
@@ -1168,7 +1172,7 @@ a:active, a:hover, a:focus {
   width: 107px !important;
 }
 
-@keyframes popup-fade-in {
+@keyframes workflow-popup-fade-in {
   0% {
     opacity: 0;
   }
@@ -1177,11 +1181,11 @@ a:active, a:hover, a:focus {
   }
 }
 
-.fadeIn {
-  animation: popup-fade-in 1s 1;
+.workflow-extension-popup-fadeIn {
+  animation: workflow-popup-fade-in 1s 1;
 }
 
-@keyframes popup-fade-out {
+@keyframes workflow-popup-fade-out {
   0% {
     opacity: 1;
   }
@@ -1190,19 +1194,19 @@ a:active, a:hover, a:focus {
   }
 }
 
-.fadeOut {
-  animation: popup-fade-out 1s 1;
+.workflow-extension-popup-fadeOut {
+  animation: workflow-popup-fade-out 1s 1;
 }
 
-.collapse {
+.workflow-extension-popup-collapse {
   top: calc(25% + 20px);
   z-index: 9999995;
   height: 40px;
 }
-.left {
+.workflow-extension-popup-goLeft {
   left: 3000px;
 }
 
-.flex-display {
+.workflow-flex-display {
   display: flex !important;
 }
