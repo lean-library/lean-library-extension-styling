@@ -1209,4 +1209,8 @@ animation: workflow-pulse 1s linear infinite;
 
 .workflow-flex-display {
   display: flex !important;
+  width: 100%;
+}
+.workflow-checkbox-flex-display {
+  display: flex !important;
 }
