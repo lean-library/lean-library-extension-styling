@@ -1171,7 +1171,7 @@ animation: workflow-pulse 1s linear infinite;
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
-  width: 107px !important;
+  width: auto !important;
 }
 
 @keyframes workflow-popup-fade-in {
@@ -1209,10 +1209,3 @@ animation: workflow-pulse 1s linear infinite;
   left: 3000px;
 }
 
-.workflow-flex-display {
-  display: flex !important;
-  width: 100%;
-}
-.workflow-checkbox-flex-display {
-  display: flex !important;
-}
