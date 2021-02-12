@@ -4,7 +4,7 @@
   width: 100% !important;
   display: flex;
   flex-direction: column !important;
-  font-family: 'Quicksand', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   margin-bottom: 15px !important;
   border-radius: 6px !important;
   -webkit-box-shadow: 0px 4px 16px 0px rgba(140, 140, 140, 0.4);
@@ -262,7 +262,7 @@
   bottom: 40px !important;
   right: 40px !important;
   z-index: 9999997 !important;
-  font-family: 'Quicksand', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   border-radius: 6px !important;
   background: #fff !important;
   -webkit-box-shadow: 0px 4px 16px 0px rgba(140, 140, 140, 0.4) !important;
@@ -463,7 +463,7 @@
 
 .workflow-extension-triggers-add span,
 .workflow-extension-triggers-see-all span {
-  font-family: 'Quicksand', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   font-size: 12px !important;
   color: #3eadfb !important;
   font-weight: 700 !important;
@@ -500,7 +500,7 @@
   width: 600px !important;
   z-index: 9999997 !important;
   box-shadow: rgba(140, 140, 140, 0.4) 0px 4px 16px 0px !important;
-  font-family: 'Quicksand' !important;
+  font-family: 'Montserrat' !important;
   background: #fff !important;
   border-radius: 6px !important;
 }
@@ -656,9 +656,7 @@
 
 
 /* BIG POPUP */
-.workflow-extension-onboardings-modal-overlay,
-.workflow-extension-faqs-modal-overlay,
-.workflow-extension-surveys-modal-overlay {
+.workflow-extension-modal-overlay {
   opacity: 1 !important;
   position: fixed !important;
   top: 0px !important;
@@ -679,7 +677,7 @@
   left: 50%;
   transform: translate(-50%, -50%) !important;
   z-index: 9999999;
-  font-family: 'Quicksand', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   border-radius: 6px !important;
   background: #fff !important;
   -webkit-box-shadow: 0px 4px 16px 0px rgba(140, 140, 140, 0.4) !important;
@@ -704,9 +702,13 @@
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  color: #3eadfb !important;
+  color: #3eadfb;
   font-size:14px !important;
   font-weight: 500 !important;
+}
+.workflow-extension-big-popup-header-close-wrapper a:active,
+.workflow-extension-big-popup-header-close-wrapper a:focus {
+  outline-width: 0 !important;
 }
 .workflow-extension-big-popup-header-text,
 .workflow-extension-big-popup-header-close {
@@ -773,6 +775,10 @@
 .workflow-extension-content-title {
   padding:10px !important;
   flex-grow: 1 !important;
+}
+
+.workflow-extension-content-title:focus {
+  outline: none !important;
 }
 
 .workflow-extension-mark-as-read-wrapper {
@@ -848,7 +854,7 @@
     display:flex !important;
     justify-content: center !important;
     align-items: center !important;
-    background: #3eadfb !important;
+    background: #3eadfb;
     width: 40px !important;
     height: 40px !important;
     border-top-left-radius: 4px !important;
@@ -871,13 +877,17 @@
     display: flex !important;
     align-items: center !important;
     padding: 0 12px !important;
-    border-bottom: 1px solid #E3E6EA !important;
+    border-bottom: 1px solid #E3E6EA;
     font-weight: 400 !important;
-    font-family: 'Quicksand' !important;
+    font-family: 'Montserrat' !important;
     font-size:15px !important;
 }
 .workflow-extension-quickmenu-right-content{
     padding: 0px 12px !important;
+}
+.workflow-extension-quickmenu-right-content a:active,
+.workflow-extension-quickmenu-right-content a:focus{
+  outline-width: 0 !important;
 }
 .workflow-extension-quickmenu-right-content-item{
     display: flex !important;
@@ -893,7 +903,7 @@
     color:#3B3B3B !important;
     text-decoration: none !important;
     font-weight: 500 !important;
-    font-family: 'Quicksand' !important;
+    font-family: 'Montserrat' !important;
     font-size:14px !important;
     display:flex !important;
     align-items: center !important;
@@ -903,7 +913,7 @@
     color:#3B3B3B !important;
     text-decoration: none !important;
     font-weight: 500 !important;
-    font-family: 'Quicksand' !important;
+    font-family: 'Montserrat' !important;
     font-size:14px !important;
 }
 .workflow-extension-quickmenu-right-content-item ul{
@@ -1147,3 +1157,55 @@ animation: workflow-pulse 1s linear infinite;
   filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
   opacity: 1 !important;
 }
+
+.workflow-extension-quickmenu-right-content-item {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.workflow-extension-quickmenu-right-content-item span {
+  width: auto !important;
+}
+
+.workflow-extension-big-popup-header-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  width: auto !important;
+}
+
+@keyframes workflow-popup-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.workflow-extension-popup-fadeIn {
+  animation: workflow-popup-fade-in 1s 1;
+}
+
+@keyframes workflow-popup-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.workflow-extension-popup-fadeOut {
+  animation: workflow-popup-fade-out 1s 1;
+}
+
+.workflow-extension-popup-collapse {
+  top: calc(25% + 20px);
+  z-index: 9999995;
+  height: 40px;
+}
+.workflow-extension-popup-goLeft {
+  left: 3000px;
+}
+
