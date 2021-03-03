@@ -71,25 +71,28 @@ hr {
 
 .flag-wrapper {
 	display: block;
-    margin-left: 225px;
-    margin-right: 0px;
-	img {
-		width: 35px;
-  		margin: 5px;
-		opacity: 0.5;
-		border-radius: 5%;
-	}
-	img:hover {
-		opacity: 1;
-	}
-	.selected {
-		opacity: 1;
-    	box-shadow: 0 0 3px 1px #ffffff;
-		width: 40px;
-	}
-	input[type=radio] {
+    margin-left: 204px;
+	margin-bottom: -5px;
+	[type=radio] {
 		opacity: 0;
 		position: fixed;
 		width: 0;
+		height: 0;
 	}
+	[type=radio] + img {
+		cursor: pointer;
+		max-width: 30px;
+		height: 20px;
+  		margin: 0 0 0 5px;
+		opacity: 0.5;
+	  }
+	  [type=radio] + img:hover {
+		opacity: 1;
+	  }
+	  
+	  /* CHECKED STYLES */
+	  [type=radio]:checked + img {
+		opacity: 1;
+    	box-shadow: 0 0 3px 1px #ffffff;
+	  }
 }
