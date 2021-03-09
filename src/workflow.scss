@@ -936,7 +936,7 @@
 .workflow-extension-quickmenu-right-content-item ul li a:hover{
     color: #3eadfb !important;
 }
-.workflow-extension-quickmenu-right-content-item img{
+.workflow-extension-quickmenu-right-content-item div{
     margin-right: 8px
 }
 
@@ -963,7 +963,7 @@
  transform: scale(1);
  }
 }
-.workflow-extension-quickmenu-right-content-item img.workflow-pulse{
+.workflow-extension-quickmenu-right-content-item div.workflow-pulse svg{
   -webkit-animation: workflow-pulse 1s linear infinite;
 animation: workflow-pulse 1s linear infinite;
 }
