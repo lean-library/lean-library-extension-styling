@@ -1,6 +1,6 @@
 /* GOOGLE POPUP */
 .workflow-extension-google-popup {
-  min-width: 450px !important;
+  max-width: 457px !important;
   width: 100% !important;
   display: flex;
   flex-direction: column !important;
@@ -20,6 +20,12 @@
   border-top-left-radius: 6px !important;
   border-top-right-radius: 6px !important;
   background: #3eadfb !important;
+}
+
+.workflow-extension-google-scholar-popup {
+  margin-left: 56%;
+  margin-top: 15px;
+  position: absolute;
 }
 
 .workflow-extension-google-popup-confluence .workflow-extension-google-popup-header{
@@ -46,10 +52,6 @@
 .workflow-extension-google-popup-header-close {
   display: flex !important;
   align-items: center !important;
-}
-
-.workflow-extension-google-popup-header-text img{
-  width: 90px !important;
 }
 
 .workflow-extension-google-popup-header-text span {
