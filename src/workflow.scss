@@ -1,6 +1,6 @@
 /* GOOGLE POPUP */
 .workflow-extension-google-popup {
-  min-width: 450px !important;
+  max-width: 457px !important;
   width: 100% !important;
   display: flex;
   flex-direction: column !important;
@@ -46,10 +46,6 @@
 .workflow-extension-google-popup-header-close {
   display: flex !important;
   align-items: center !important;
-}
-
-.workflow-extension-google-popup-header-text img{
-  width: 90px !important;
 }
 
 .workflow-extension-google-popup-header-text span {
