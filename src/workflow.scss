@@ -19,27 +19,27 @@
   padding: 6px 15px !important;
   border-top-left-radius: 6px !important;
   border-top-right-radius: 6px !important;
-  background: #3eadfb !important;
+  background: #3eadfb;
 }
 
 .workflow-extension-google-popup-confluence .workflow-extension-google-popup-header{
-  background: #3eadfb !important;
+  background: #3eadfb;
 }
 
 .workflow-extension-google-popup-sharepoint .workflow-extension-google-popup-header{
-  background: #018273 !important;
+  background: #018273;
 }
 
 .workflow-extension-google-popup-custom .workflow-extension-google-popup-header{
-  background: #46af89 !important;
+  background: #46af89;
 }
 
 .workflow-extension-google-popup-worldcat .workflow-extension-google-popup-header{
-  background: #4f585e !important;
+  background: #4f585e;
 }
 
 .workflow-extension-google-popup-alfresco .workflow-extension-google-popup-header{
-  background: #76BB21 !important;
+  background: #76BB21;
 }
 
 .workflow-extension-google-popup-header-text,
@@ -52,11 +52,16 @@
   font-size: 15px !important;
   font-weight: 500 !important;
   margin-left: 8px !important;
-  color: #80FBFF !important;
+  color: #80FBFF;
 }
 
 .workflow-extension-google-popup-header-close {
   cursor: pointer !important;
+}
+
+.workflow-extension-google-popup-header-close span {
+  width: 16px;
+  height: 16px;
 }
 
 /* subheader */
@@ -726,6 +731,11 @@
 .workflow-extension-big-popup-header-close {
   cursor: pointer !important;
   margin-left: 24px !important;
+}
+
+.workflow-extension-big-popup-header-close span {
+  width: 16px;
+  height: 16px;
 }
 
 .workflow-extension-big-popup-body {
