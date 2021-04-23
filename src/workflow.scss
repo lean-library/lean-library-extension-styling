@@ -22,6 +22,12 @@
   background: #3eadfb !important;
 }
 
+.workflow-extension-google-scholar-popup {
+  display: inline-block;
+  padding: 15px;
+  position: absolute;
+}
+
 .workflow-extension-google-popup-confluence .workflow-extension-google-popup-header{
   background: #3eadfb !important;
 }
@@ -1204,4 +1210,10 @@ animation: workflow-pulse 1s linear infinite;
 .workflow-extension-popup-goLeft {
   left: 3000px;
 }
+
+#gs_res_ccl {
+  display: inline-block !important;
+  min-width: 825px;
+}
+
 
