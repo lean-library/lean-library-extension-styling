@@ -925,8 +925,18 @@
     font-size:13px !important;
     transition: .3s !important;
 }
-.workflow-extension-quickmenu-right-content-item ul li a:hover{
-    color: #3eadfb !important;
+.workflow-extension-quickmenu-hover-class {
+  transition: .3s !important;
+}
+.workflow-extension-quickmenu-right-content-item:hover,
+.workflow-extension-quickmenu-right-content-item a:hover {
+  border-color: transparent !important;
+}
+.workflow-extension-quickmenu-hover-class:hover,
+.workflow-extension-quickmenu-right-content-item ul li a:hover {
+  font-size: 15px !important;
+  font-weight: bolder !important;
+  border-color: transparent !important;
 }
 .workflow-extension-quickmenu-right-content-item div{
     margin-right: 8px
