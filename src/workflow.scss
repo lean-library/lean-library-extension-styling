@@ -889,11 +889,6 @@
   text-align: center !important;
 }
 
-.workflow-extension-campaign-submit button:disabled {
-  cursor: not-allowed !important;
-  opacity: .25 !important;
-}
-
 .workflow-extension-campaign-submit button {
   font-family: 'Montserrat' !important;
   margin: 0px !important;
@@ -909,6 +904,11 @@
 
 .workflow-extension-campaign-submit button:hover {
   opacity: .75 !important;
+}
+
+.workflow-extension-campaign-submit button:disabled {
+  cursor: not-allowed !important;
+  opacity: .25 !important;
 }
 
 /* QUICKMENU */
