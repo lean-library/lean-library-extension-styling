@@ -674,6 +674,12 @@
   overflow: hidden !important;
 }
 
+.workflow-extension-big-popup a,
+.workflow-extension-big-popup a:hover,
+.workflow-extension-big-popup a:focus {
+  border-color: transparent !important;
+}
+
 /* header */
 .workflow-extension-big-popup-header {
   display: flex !important;
@@ -1007,10 +1013,10 @@
   font-size:14px !important;
   border: none !important;
 }
-.workflow-extension-quickmenu-right-content-item ul{
-  padding-left: 0px !important;
-  list-style-type: none !important;
-  margin: 0px 0px 0px 38px !important;
+.workflow-extension-quickmenu-right-content-item ul{ 
+    padding-left: 0px !important;
+    list-style-type: none !important;
+    margin: 0px 0px 0px 38px !important;
 }
 .workflow-extension-quickmenu-right-content-item ul li::before {
   content: "•" !important;
@@ -1024,8 +1030,27 @@
   font-size:13px !important;
   transition: .3s !important;
 }
-.workflow-extension-quickmenu-right-content-item ul li a:hover{
-  color: #3eadfb !important;
+.workflow-extension-quickmenu-right-content-item ul li,
+.workflow-extension-quickmenu-hover-class {
+  transition: all 0.3s linear !important;
+}
+.workflow-extension-quickmenu-right-content-item:hover,
+.workflow-extension-quickmenu-right-content-item:focus,
+.workflow-extension-quickmenu-right-content-item a:hover,
+.workflow-extension-quickmenu-right-content-item a:focus,
+.workflow-extension-quickmenu-right-content-item ul li a:hover,
+.workflow-extension-quickmenu-right-content-item ul li a:focus {
+  border-color: transparent !important;
+  text-decoration: none !important;
+}
+.workflow-extension-quickmenu-hover-class:hover,
+.workflow-extension-quickmenu-hover-class:focus,
+.workflow-extension-quickmenu-right-content-item ul li:hover,
+.workflow-extension-quickmenu-right-content-item ul li:focus {
+  border-color: transparent !important;
+  transform: scale(1.1);
+  transition: all 0.3s linear !important;
+  text-decoration: none !important;
 }
 .workflow-extension-quickmenu-right-content-item div{
   display: flex !important;
