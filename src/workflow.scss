@@ -985,6 +985,120 @@
 animation: workflow-pulse 1s linear infinite;
 }
 
+/* CONTENT INTEGRATION */
+workflow-extension-highlight {
+  color:#022242 !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  position: relative !important;
+  transition: 0.25s !important;
+}
+workflow-extension-highlight:hover {
+  background-color: #022242 !important;
+  color:#fff !important;
+}
+
+workflow-extension-highlight .workflow-extension-highlight-tooltip {
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 300px !important;
+  height: auto !important;
+
+  position: absolute !important;
+  left: 50% !important;
+  top: calc(100% + 6px) !important;
+  transform: translate(-50%) !important;
+
+  box-sizing: border-box !important;
+  border: none !important;
+  border-radius: 20px !important;
+  
+  background-color: #022242;
+  font-size: 14px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: normal !important;
+  color: #fff !important;
+  cursor: initial !important;
+  -webkit-font-smoothing: antialiased !important;
+
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: 0.25s !important;
+  z-index: 99999999998 !important;
+}
+
+workflow-extension-highlight:hover .workflow-extension-highlight-tooltip {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+workflow-extension-highlight .workflow-extension-highlight-tooltip-header {
+  padding: 12px !important;
+  text-align: center !important;
+  z-index: 99999999999 !important;
+}
+
+workflow-extension-highlight .workflow-extension-highlight-tooltip-publisher-content,
+workflow-extension-highlight .workflow-extension-highlight-tooltip-by {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+workflow-extension-highlight .workflow-extension-highlight-tooltip-publisher-content {
+  font-size: 18px !important;
+}
+
+workflow-extension-highlight .workflow-extension-highlight-tooltip-publisher-content svg {
+  margin-right: 8px !important;
+}
+
+workflow-extension-highlight .workflow-extension-highlight-tooltip-by {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+workflow-extension-highlight .workflow-extension-highlight-tooltip-body {
+  padding: 0 12px !important;
+  z-index: 99999999999 !important;
+}
+
+workflow-extension-highlight .workflow-extension-highlight-tooltip-definition {
+  padding: 12px !important;
+  background-color: #fff !important;
+  font-weight: 400 !important;
+  color: #022242 !important;
+  border-radius: 16px !important;
+  text-align: left !important;
+}
+workflow-extension-highlight .workflow-extension-highlight-tooltip-button {
+  text-align: center !important;
+}
+workflow-extension-highlight .workflow-extension-highlight-tooltip-button a {
+  font-family: 'Montserrat' !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px auto !important;
+  width: 200px !important;
+  height: 36px !important;
+  border-radius: 20px !important;
+  border: none !important;
+  outline: none !important;
+  /* background-color: #FE6856; */
+  background-color: #3EADFB;
+  color: #fff !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  transition: .3s !important;
+  text-decoration: none !important;
+}
+workflow-extension-highlight .workflow-extension-highlight-tooltip-button a:hover {
+  opacity: .75 !important;
+}
+
 @media only screen and (max-width: 2560px) {
   .workflow-extension-big-popup {
     max-width:60%;
