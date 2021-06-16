@@ -1038,6 +1038,10 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip-header {
   z-index: 99999999999 !important;
 }
 
+workflow-extension-highlight .workflow-extension-highlight-tooltip-header span{
+  text-transform: uppercase !important;
+}
+
 workflow-extension-highlight .workflow-extension-highlight-tooltip-publisher-content,
 workflow-extension-highlight .workflow-extension-highlight-tooltip-by {
   margin: 0 !important;
@@ -1094,6 +1098,7 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip-button a {
   font-weight: 500 !important;
   transition: .3s !important;
   text-decoration: none !important;
+  text-transform: uppercase !important;
 }
 workflow-extension-highlight .workflow-extension-highlight-tooltip-button a:hover {
   opacity: .75 !important;
