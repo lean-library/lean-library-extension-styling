@@ -987,15 +987,13 @@ animation: workflow-pulse 1s linear infinite;
 
 /* CONTENT INTEGRATION */
 workflow-extension-highlight {
-  color:#022242 !important;
+  display: inline-block !important;
+  background-color:#022242 !important;
+  color:#fff !important;
   font-weight: 700 !important;
   cursor: pointer !important;
   position: relative !important;
   transition: 0.25s !important;
-}
-workflow-extension-highlight:hover {
-  background-color: #022242 !important;
-  color:#fff !important;
 }
 
 workflow-extension-highlight .workflow-extension-highlight-tooltip {
