@@ -1,10 +1,12 @@
+$font-sans: 'Montserrat', sans-serif !important;
+
 /* GOOGLE POPUP */
 .workflow-extension-google-popup {
   max-width: 457px !important;
   width: 100% !important;
   display: flex;
   flex-direction: column !important;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: $font-sans;
   margin-bottom: 15px !important;
   border-radius: 6px !important;
   -webkit-box-shadow: 0px 4px 16px 0px rgba(140, 140, 140, 0.4);
@@ -107,13 +109,13 @@
 }
 
 .workflow-extension-google-popup-result-image img{
-    max-width: 36px !important;
-    width: 36px !important;
-    height: 36px !important;
-    border-radius: 50% !important;
-    -webkit-box-shadow: 0px 2px 4px 0px rgba(146, 146, 146, 0.55) !important;
-    -moz-box-shadow: 0px 2px 4px 0px rgba(146, 146, 146, 0.55) !important;
-    box-shadow: 0px 2px 4px 0px rgba(146, 146, 146, 0.55) !important;
+  max-width: 36px !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(146, 146, 146, 0.55) !important;
+  -moz-box-shadow: 0px 2px 4px 0px rgba(146, 146, 146, 0.55) !important;
+  box-shadow: 0px 2px 4px 0px rgba(146, 146, 146, 0.55) !important;
 }
 
 .workflow-extension-google-popup-result-text {
@@ -257,7 +259,7 @@
   bottom: 40px !important;
   right: 40px !important;
   z-index: 9999997 !important;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: $font-sans;
   border-radius: 6px !important;
   background: #fff !important;
   -webkit-box-shadow: 0px 4px 16px 0px rgba(140, 140, 140, 0.4) !important;
@@ -458,7 +460,7 @@
 
 .workflow-extension-triggers-add span,
 .workflow-extension-triggers-see-all span {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: $font-sans;
   font-size: 12px !important;
   color: #3eadfb !important;
   font-weight: 700 !important;
@@ -495,7 +497,7 @@
   width: 600px !important;
   z-index: 9999997 !important;
   box-shadow: rgba(140, 140, 140, 0.4) 0px 4px 16px 0px !important;
-  font-family: 'Montserrat' !important;
+  font-family: $font-sans;
   background: #fff !important;
   border-radius: 6px !important;
 }
@@ -672,7 +674,7 @@
   left: 50%;
   transform: translate(-50%, -50%) !important;
   z-index: 9999999;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: $font-sans;
   border-radius: 6px !important;
   background: #fff !important;
   -webkit-box-shadow: 0px 4px 16px 0px rgba(140, 140, 140, 0.4) !important;
@@ -731,6 +733,7 @@
 .workflow-extension-big-popup-header-close {
   cursor: pointer !important;
   margin-left: 24px !important;
+  border: none !important;
 }
 
 .workflow-extension-big-popup-header-close span {
@@ -742,6 +745,7 @@
   display: flex !important;
   width: 100% !important;
   height: 100% !important;
+  overflow-y: auto !important;
 }
 
 /* nav */
@@ -833,6 +837,99 @@
   padding:0 !important;
 }
 
+/* BIG POPUP - CAMPAIGN */
+.workflow-extension-campaign {
+  width: 100% !important;
+  padding: 20px 30px !important;
+  overflow-y: auto !important;
+  margin: auto;
+}
+
+.workflow-extension-campaign-question {
+  margin-bottom: 20px !important;
+  padding: 15px !important;
+  border-radius: 20px !important;
+  background-color: #0093D5;
+  color: #fff !important;
+}
+
+.workflow-extension-campaign-question-title {
+  font-family: $font-sans;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+}
+
+.workflow-extension-campaign-question-comment {
+  font-family: $font-sans;
+  font-size: 16px !important;
+  margin: 8px 0 16px 0 !important;
+}
+
+.workflow-extension-campaign-question-feedback {
+  display: flex !important;
+  justify-content: space-evenly !important;
+  background: #fff !important;
+  border-radius: 20px !important;
+  padding: 8px !important;
+}
+
+.workflow-extension-campaign-question-feedback input[type="radio"] {
+  display: none !important;
+}
+
+.workflow-extension-campaign-question-feedback label {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.workflow-extension-campaign-question-feedback span {
+  height: 40px !important;
+  font-size: 24px !important;
+  border-radius: 50% !important;
+  background-color: #0093D5;
+  width: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  opacity: .5 !important;
+  cursor: pointer !important;
+  transition: .3s !important;
+}
+
+.workflow-extension-campaign-question-feedback span:hover,
+.workflow-extension-campaign-question-feedback input[type="radio"]:checked + label > span {
+  opacity: 1 !important;
+}
+
+.workflow-extension-campaign-submit {
+  text-align: center !important;
+}
+
+.workflow-extension-campaign-submit button {
+  font-family: $font-sans;
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 240px !important;
+  height: 48px !important;
+  border-radius: 20px !important;
+  border: none !important;
+  background-color: #0093D5;
+  color: #fff !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  transition: .3s !important;
+  text-transform: uppercase !important;
+}
+
+.workflow-extension-campaign-submit button:hover {
+  opacity: .75 !important;
+}
+
+.workflow-extension-campaign-submit button:disabled {
+  cursor: not-allowed !important;
+  opacity: .25 !important;
+}
+
 /* QUICKMENU */
 .workflow-extension-quickmenu {
   display: flex !important;
@@ -857,17 +954,17 @@
 }
 
 .workflow-extension-quickmenu-left a {
-    display:flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    background: #3eadfb;
-    width: 40px !important;
-    height: 40px !important;
-    border-top-left-radius: 4px !important;
-    border-bottom-left-radius: 4px !important;
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(204,204,204,0.5) !important;
-    -moz-box-shadow: 0px 0px 7px 0px rgba(204,204,204,0.5) !important;
-    box-shadow: 0px 0px 7px 0px rgba(204,204,204,0.5) !important;
+  display:flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: #3eadfb;
+  width: 40px !important;
+  height: 40px !important;
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(204,204,204,0.5) !important;
+  -moz-box-shadow: 0px 0px 7px 0px rgba(204,204,204,0.5) !important;
+  box-shadow: 0px 0px 7px 0px rgba(204,204,204,0.5) !important;
 }
 .workflow-extension-quickmenu-right{
   width: 200px !important;
@@ -879,65 +976,70 @@
   box-shadow: 0px 0px 7px 0px rgba(204,204,204,0.5) !important;
 }
 .workflow-extension-quickmenu-right-header{
-    height: 40px !important;
-    display: flex !important;
-    align-items: center !important;
-    padding: 0 12px !important;
-    border-bottom: 1px solid #E3E6EA;
-    font-weight: 400 !important;
-    font-family: 'Montserrat' !important;
-    font-size:15px !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 12px !important;
+  border-bottom: 1px solid #E3E6EA;
+  font-weight: 400 !important;
+  font-family: $font-sans;
+  font-size:15px !important;
 }
 .workflow-extension-quickmenu-right-content{
-    padding: 0px 12px !important;
+  padding: 0px 12px !important;
 }
+.workflow-extension-quickmenu-right-content a,
 .workflow-extension-quickmenu-right-content a:active,
 .workflow-extension-quickmenu-right-content a:focus{
+  text-decoration: none !important;
   outline-width: 0 !important;
 }
 .workflow-extension-quickmenu-right-content-item{
-    display: flex !important;
-    flex-wrap: wrap !important;
-    align-items: center !important;
-    font-size: 14px !important;
-    font-weight: 400 !important;
-    margin: 12px 0 !important;
-    cursor: pointer !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  margin: 12px 0 !important;
+  cursor: pointer !important;
+  border: none !important;
 }
 .workflow-extension-quickmenu-right-content-item span{
-    width:100%;
-    color:#3B3B3B;
-    text-decoration: none !important;
-    font-weight: 500 !important;
-    font-family: 'Montserrat' !important;
-    font-size:14px !important;
-    display:flex !important;
-    align-items: center !important;
+  width: 100%;
+  color: #3B3B3B;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  font-family: $font-sans;
+  font-size: 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  border: none !important;
 }
 .workflow-extension-quickmenu-right-content-item a{
-    width:100%;
-    color:#3B3B3B;
-    text-decoration: none !important;
-    font-weight: 500 !important;
-    font-family: 'Montserrat' !important;
-    font-size:14px !important;
+  width: 100%;
+  color: #3B3B3B;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  font-family: $font-sans;
+  font-size: 14px !important;
+  border: none !important;
 }
 .workflow-extension-quickmenu-right-content-item ul{ 
-    padding-left: 0px !important;
-    list-style-type: none !important;
-    margin: 0px 0px 0px 38px !important;
+  padding-left: 0px !important;
+  list-style-type: none !important;
+  margin: 0px 0px 0px 38px !important;
 }
 .workflow-extension-quickmenu-right-content-item ul li::before {
-    content: "•" !important;
-    color: rgb(96, 194, 240) !important;
-    font-weight: bold !important;
-    display: inline-block !important;
-    width: 0.8em !important;
-    vertical-align: top !important;
+  content: "•" !important;
+  color: rgb(96, 194, 240) !important;
+  font-weight: bold !important;
+  display: inline-block !important;
+  width: 0.8em !important;
+  vertical-align: top !important;
 }
 .workflow-extension-quickmenu-right-content-item ul li a{
-    font-size:13px !important;
-    transition: .3s !important;
+  font-size: 13px !important;
+  transition: .3s !important;
 }
 .workflow-extension-quickmenu-right-content-item ul li,
 .workflow-extension-quickmenu-hover-class {
@@ -962,7 +1064,8 @@
   text-decoration: none !important;
 }
 .workflow-extension-quickmenu-right-content-item div{
-    margin-right: 8px
+  display: flex !important;
+  margin-right: 8px
 }
 
 @-webkit-keyframes workflow-pulse {
@@ -1238,5 +1341,3 @@ animation: workflow-pulse 1s linear infinite;
   display: inline-block !important;
   min-width: 825px;
 }
-
-
