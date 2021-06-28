@@ -997,14 +997,14 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip-by {
 
 workflow-extension-highlight .workflow-extension-highlight-tooltip-publisher-content {
   font-size: 18px !important;
-}
-
-workflow-extension-highlight .workflow-extension-highlight-tooltip-publisher-content span {
-  display: flex !important;
-}
-
-workflow-extension-highlight .workflow-extension-highlight-tooltip-publisher-content svg {
-  margin-right: 8px !important;
+  
+  span {
+  	display: flex !important;
+  }
+  
+  svg {
+  	margin-right: 8px !important;
+  }
 }
 
 workflow-extension-highlight .workflow-extension-highlight-tooltip-by {
