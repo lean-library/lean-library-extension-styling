@@ -664,6 +664,12 @@ $font-sans: 'Montserrat', sans-serif !important;
   display: initial !important;
   /* background: rgba(0, 0, 0, 0.4) !important; */
 }
+
+.workflow-extension-loading-overlay {
+  font-family: $font-sans;
+  font-size: 20px !important;
+}
+
 .workflow-extension-loading-overlay.inactive {
   display: none !important;
 }
