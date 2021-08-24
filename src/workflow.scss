@@ -655,7 +655,7 @@ $font-sans: 'Montserrat', sans-serif !important;
 
 
 /* BIG POPUP */
-.workflow-extension-modal-overlay {
+.workflow-extension-modal-overlay, .workflow-extension-loading-overlay {
   opacity: 1 !important;
   position: fixed !important;
   top: 0px !important;
@@ -663,7 +663,17 @@ $font-sans: 'Montserrat', sans-serif !important;
   width: 100% !important;
   height: 100% !important;
   z-index: 9999998 !important;
+  display: initial !important;
   /* background: rgba(0, 0, 0, 0.4) !important; */
+}
+
+.workflow-extension-loading-overlay {
+  font-family: $font-sans;
+  font-size: 20px !important;
+}
+
+.workflow-extension-loading-overlay.inactive {
+  display: none !important;
 }
 
 .workflow-extension-big-popup {
@@ -1127,6 +1137,10 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip-button a:hove
   margin: 12px 0 !important;
   cursor: pointer !important;
   border: none !important;
+}
+.workflow-extension-quickmenu-right-content-item[disabled] {
+  cursor: not-allowed !important;
+  opacity: .85;
 }
 .workflow-extension-quickmenu-right-content-item span{
   width: 100%;
