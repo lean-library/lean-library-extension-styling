@@ -1064,6 +1064,13 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip-button a:hove
   opacity: .75 !important;
 }
 
+/* CHATBOT */
+.workflow-extension-chatbot {
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+}
+
 /* QUICKMENU */
 .workflow-extension-quickmenu {
   display: flex !important;
