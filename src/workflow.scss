@@ -1138,7 +1138,8 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip-button a:hove
   cursor: pointer !important;
   border: none !important;
 }
-.workflow-extension-quickmenu-right-content-item[disabled] {
+.workflow-extension-quickmenu-right-content-item[disabled],
+.workflow-extension-quickmenu-right-content-item [disabled] {
   cursor: not-allowed !important;
   opacity: .85;
 }
