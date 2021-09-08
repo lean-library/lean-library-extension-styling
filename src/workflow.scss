@@ -1066,6 +1066,7 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip-button a:hove
 
 /* CHATBOT */
 .workflow-extension-chatbot {
+  z-index: 9999999;
   position: fixed;
   bottom: 0;
   right: 100px;
