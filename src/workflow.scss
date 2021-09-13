@@ -1066,10 +1066,22 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip-button a:hove
 
 /* CHATBOT */
 .workflow-extension-chatbot {
-  z-index: 9999999;
-  position: fixed;
-  bottom: 0;
-  right: 100px;
+  z-index: 9999999 !important;
+  position: fixed !important;
+  bottom: 0 !important;
+  right: 100px !important;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(204,204,204,0.5) !important;
+  -moz-box-shadow: 0px 0px 7px 0px rgba(204,204,204,0.5) !important;
+  box-shadow: 0px 0px 7px 0px rgba(204,204,204,0.5) !important;
+  padding: 4px 8px !important;
+  background: #fff !important;
+  font-size: 18px !important;
+}
+.workflow-extension-chatbot * {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* QUICKMENU */
