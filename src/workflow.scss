@@ -1168,6 +1168,10 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip-button a:hove
   list-style-type: none !important;
   margin: 0px 0px 0px 38px !important;
 }
+.workflow-extension-quickmenu-right-content-item ul li::marker {
+  content: "" !important;
+  display: none !important;
+}
 .workflow-extension-quickmenu-right-content-item ul li::before {
   content: "•" !important;
   color: rgb(96, 194, 240) !important;
