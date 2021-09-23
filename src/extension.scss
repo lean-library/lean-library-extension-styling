@@ -40,7 +40,8 @@ body {
   width: 100% !important;
   max-width: 1200px;
 
-  form {
+  form,
+  .form__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
