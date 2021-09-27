@@ -944,13 +944,12 @@ $font-sans: 'Montserrat', sans-serif !important;
 
 /* CONTENT INTEGRATION */
 workflow-extension-highlight {
-  display: inline-block !important;
   background-color: #022242 !important;
   color: #fff !important;
   font-weight: 700 !important;
   cursor: pointer !important;
-  position: relative !important;
   transition: 0.25s !important;
+  z-index: 9999999 !important;
 }
 
 workflow-extension-highlight .workflow-extension-highlight-tooltip {
@@ -958,11 +957,6 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip {
   padding: 0px !important;
   width: 300px !important;
   height: auto !important;
-
-  position: absolute !important;
-  left: 50% !important;
-  top: calc(100% + 6px) !important;
-  transform: translate(-50%) !important;
 
   box-sizing: border-box !important;
   border: none !important;
@@ -980,7 +974,7 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip {
   opacity: 0 !important;
   visibility: hidden !important;
   transition: 0.25s !important;
-  z-index: 99999999998 !important;
+  z-index: 9999999 !important;
 }
 
 workflow-extension-highlight:hover .workflow-extension-highlight-tooltip {
@@ -991,7 +985,7 @@ workflow-extension-highlight:hover .workflow-extension-highlight-tooltip {
 workflow-extension-highlight .workflow-extension-highlight-tooltip-header {
   padding: 12px !important;
   text-align: center !important;
-  z-index: 99999999999 !important;
+  z-index: 9999999 !important;
 }
 
 workflow-extension-highlight .workflow-extension-highlight-tooltip-header span{
@@ -1026,7 +1020,7 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip-by {
 
 workflow-extension-highlight .workflow-extension-highlight-tooltip-body {
   padding: 0 12px !important;
-  z-index: 99999999999 !important;
+  z-index: 9999999 !important;
 }
 
 workflow-extension-highlight .workflow-extension-highlight-tooltip-definition {
