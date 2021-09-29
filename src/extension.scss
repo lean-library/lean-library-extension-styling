@@ -113,8 +113,11 @@ body {
   }
 
   &--content {
-    border: 1px solid $medium-gray;
     width: 334px;
+
+    > div {
+      border: 1px solid $medium-gray;
+    }
   }
 
   &--options {
