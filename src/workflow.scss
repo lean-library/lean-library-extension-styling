@@ -964,7 +964,7 @@ $font-sans: 'Montserrat', sans-serif !important;
   background-color: #022242;
   font-size: 14px !important;
   line-height: 1.3 !important;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: $font-sans;
   font-style: normal !important;
   color: #fff !important;
   cursor: initial !important;
@@ -1036,7 +1036,7 @@ $font-sans: 'Montserrat', sans-serif !important;
 }
 
 .workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-button a {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: $font-sans;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
