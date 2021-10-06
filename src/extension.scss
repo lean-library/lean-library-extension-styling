@@ -16,10 +16,7 @@
     box-sizing: border-box;
   }
 }
-.css-df17o1,
-._loading_overlay_overlay {
-  background:rgb(255 255 255 / 70%);
-}
+
 body {
   color: $body-font-color;
   font-family: $body-font-family;
@@ -139,6 +136,10 @@ body {
       width: 100%;
     }
   }
+}
+
+._loading_overlay_overlay {
+  background: rgba(255, 255, 255, 0.7) !important;
 }
 
 header {
