@@ -141,8 +141,10 @@
   border: 0;
   background: none;
   color: #333333;
+  font-family: $body-font-family;
   text-align: center;
   text-decoration: underline;
+
   &:disabled {
     cursor: not-allowed !important;
     opacity: .25 !important;
