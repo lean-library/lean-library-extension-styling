@@ -47,11 +47,21 @@ body {
     justify-content: space-between;
   }
 
+  $fieldset-width: 48%;
+
   fieldset {
-    width: 48%;
+    width: $fieldset-width;
     margin-bottom: 25px;
 
     fieldset {
+      width: 100%;
+    }
+  }
+
+  .fieldset__wrapper {
+    width: $fieldset-width;
+
+    fieldset: {
       width: 100%;
     }
   }
