@@ -943,25 +943,20 @@ $font-sans: 'Montserrat', sans-serif !important;
 }
 
 /* CONTENT INTEGRATION */
-workflow-extension-highlight {
-  background-color: #022242 !important;
-  color: #fff !important;
-  font-weight: 700 !important;
-  cursor: pointer !important;
+.workflow-extension-highlight-wrapper {
+  display: inline-block !important;
+  position: relative !important;
   transition: 0.25s !important;
-  z-index: 9999999 !important;
 }
 
-workflow-extension-highlight .workflow-extension-highlight-tooltip {
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip {
   margin: 0px !important;
   padding: 0px !important;
   width: 300px !important;
   height: auto !important;
-
   box-sizing: border-box !important;
   border: none !important;
   border-radius: 20px !important;
-  
   background-color: #022242;
   font-size: 14px !important;
   line-height: 1.3 !important;
@@ -970,30 +965,29 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip {
   color: #fff !important;
   cursor: initial !important;
   -webkit-font-smoothing: antialiased !important;
-
   opacity: 0 !important;
   visibility: hidden !important;
   transition: 0.25s !important;
   z-index: 9999999 !important;
 }
 
-workflow-extension-highlight:hover .workflow-extension-highlight-tooltip {
+.workflow-extension-highlight-wrapper:hover .workflow-extension-highlight-tooltip {
   opacity: 1 !important;
   visibility: visible !important;
 }
 
-workflow-extension-highlight .workflow-extension-highlight-tooltip-header {
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-header {
   padding: 12px !important;
   text-align: center !important;
   z-index: 9999999 !important;
 }
 
-workflow-extension-highlight .workflow-extension-highlight-tooltip-header span{
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-header span {
   text-transform: uppercase !important;
 }
 
-workflow-extension-highlight .workflow-extension-highlight-tooltip-publisher-content,
-workflow-extension-highlight .workflow-extension-highlight-tooltip-by {
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-publisher-content,
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-by {
   margin: 0 !important;
   padding: 0 !important;
   display: flex !important;
@@ -1001,29 +995,29 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip-by {
   justify-content: center !important;
 }
 
-workflow-extension-highlight .workflow-extension-highlight-tooltip-publisher-content {
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-publisher-content {
   font-size: 18px !important;
-  
-  span {
-  	display: flex !important;
-  }
-  
-  svg {
-  	margin-right: 8px !important;
-  }
 }
 
-workflow-extension-highlight .workflow-extension-highlight-tooltip-by {
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-publisher-content span {
+  display: flex !important;
+}
+
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-publisher-content svg {
+  margin-right: 8px !important;
+}
+
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-by {
   font-size: 14px !important;
   font-weight: 400 !important;
 }
 
-workflow-extension-highlight .workflow-extension-highlight-tooltip-body {
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-body {
   padding: 0 12px !important;
   z-index: 9999999 !important;
 }
 
-workflow-extension-highlight .workflow-extension-highlight-tooltip-definition {
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-definition {
   padding: 12px !important;
   background-color: #fff !important;
   font-weight: 400 !important;
@@ -1032,10 +1026,12 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip-definition {
   border-radius: 16px !important;
   text-align: left !important;
 }
-workflow-extension-highlight .workflow-extension-highlight-tooltip-button {
+
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-button {
   text-align: center !important;
 }
-workflow-extension-highlight .workflow-extension-highlight-tooltip-button a {
+
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-button a {
   font-family: $font-sans;
   display: flex !important;
   align-items: center !important;
@@ -1054,7 +1050,8 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip-button a {
   text-decoration: none !important;
   text-transform: uppercase !important;
 }
-workflow-extension-highlight .workflow-extension-highlight-tooltip-button a:hover {
+
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-button a:hover {
   opacity: .75 !important;
 }
 
@@ -1172,7 +1169,7 @@ workflow-extension-highlight .workflow-extension-highlight-tooltip-button a:hove
   width: 100%;
   color: #3B3B3B;
   text-decoration: none !important;
-  font-weight: 500 !important;
+  font-weight: 500;
   font-family: $font-sans;
   font-size: 14px !important;
   border: none !important;
