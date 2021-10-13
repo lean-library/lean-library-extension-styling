@@ -95,6 +95,9 @@ $font-sans: 'Montserrat', sans-serif !important;
 .workflow-extension-google-popup-exlibris .workflow-extension-google-popup-subheader a {
   color: #002F56 !important;
 }
+.workflow-extension-google-popup-tdnet .workflow-extension-google-popup-subheader a {
+  color: #ACC330 !important;
+}
 
 /* source */
 .workflow-extension-google-popup .workflow-extension-google-popup-source:not(:last-child),
@@ -172,6 +175,10 @@ $font-sans: 'Montserrat', sans-serif !important;
 .workflow-extension-google-popup-footer-ebsco a,
 .workflow-extension-google-popup-footer-exlibris a {
   color: #002F56 !important;
+}
+
+.workflow-extension-google-popup-footer-tdnet {
+  color: #ACC330 !important;
 }
 
 /* error */
