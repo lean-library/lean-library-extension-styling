@@ -237,3 +237,19 @@ hr {
     }
   }
 }
+
+.link--advanced-settings,
+.link--quick-settings {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.link--advanced-settings {
+  color: unset;
+  text-align: right;
+}
+
+.link--quick-settings {
+  text-decoration: none;
+}
