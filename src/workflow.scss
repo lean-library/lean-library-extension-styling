@@ -96,6 +96,14 @@ $font-sans: 'Montserrat', sans-serif !important;
   color: #002F56 !important;
 }
 
+.workflow-extension-google-popup-tdnet .workflow-extension-google-popup-subheader a {
+  color: #ACC330 !important;
+}
+
+.workflow-extension-google-popup-tripdatabase .workflow-extension-google-popup-subheader a {
+  color: #533764 !important;
+}
+
 /* source */
 .workflow-extension-google-popup .workflow-extension-google-popup-source:not(:last-child),
 .workflow-extension-google-popup .workflow-extension-google-popup-source-error:not(:last-child) {
@@ -172,6 +180,14 @@ $font-sans: 'Montserrat', sans-serif !important;
 .workflow-extension-google-popup-footer-ebsco a,
 .workflow-extension-google-popup-footer-exlibris a {
   color: #002F56 !important;
+}
+
+.workflow-extension-google-popup-footer-tdnet {
+  color: #ACC330 !important;
+}
+
+.workflow-extension-google-popup-footer-tripdatabase {
+  color: #533764 !important;
 }
 
 /* error */
