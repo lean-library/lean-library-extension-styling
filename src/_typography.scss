@@ -22,12 +22,12 @@ header {
 a:not(.button),
 .button--anchor-style {
   @include link-new-window($anchor-color);
-	color: $anchor-color;
-	text-decoration: underline;
-	&:hover,
-	&:focus {
-		text-decoration: none;
-	}
+  color: $anchor-color;
+  text-decoration: underline;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 p, ul, ol {
@@ -35,9 +35,17 @@ p, ul, ol {
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .paragraph--no-margin {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }

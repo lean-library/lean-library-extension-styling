@@ -141,7 +141,7 @@
   border: 0;
   background: none;
   color: #333333;
-  font-family: $body-font-family;
+  font-family: inherit;
   font-size: 12px;
 
   &:disabled {
