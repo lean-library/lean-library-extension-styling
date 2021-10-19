@@ -253,3 +253,8 @@ hr {
 .link--quick-settings {
   text-decoration: none;
 }
+
+a[disabled] {
+  pointer-events: none;
+  opacity: .5;
+}
