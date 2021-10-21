@@ -131,3 +131,39 @@
   display: block;
   margin: 1rem 0 1rem 0;
 }
+
+.button--text {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #333333;
+  font-family: inherit;
+  font-size: 12px;
+
+  &:disabled {
+    cursor: not-allowed !important;
+    opacity: .25 !important;
+  }
+}
+
+.button--undo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  img {
+    width: 16px;
+    margin: 0 5px 0 10px;
+  }
+}
