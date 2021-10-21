@@ -1002,33 +1002,28 @@ $font-sans: 'Montserrat', sans-serif !important;
   z-index: 99999999999 !important;
 }
 
-.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-header span {
-  text-transform: uppercase !important;
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-header-logo img {
+  position: initial !important;
+  display: inline-block !important;
+  max-width: 276px !important;
+  margin: 0 0 8px 0 !important;
+  border-radius: 0 !important;
 }
 
-.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-publisher-content,
-.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-by {
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-header-title,
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-header-description {
   margin: 0 !important;
   padding: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  position: initial !important;
+  display: block !important;
 }
 
-.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-publisher-content {
-  font-size: 18px !important;
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-header-title {
+  font-weight: 500 !important;
+  font-size: 16px !important;
 }
 
-.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-publisher-content span {
-  display: flex !important;
-}
-
-.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-publisher-content svg {
-  margin-right: 8px !important;
-}
-
-.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-by {
-  font-size: 14px !important;
+.workflow-extension-highlight-wrapper .workflow-extension-highlight-tooltip-header-description {
   font-weight: 400 !important;
 }
 
