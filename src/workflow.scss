@@ -964,7 +964,9 @@ $font-sans: 'Montserrat', sans-serif !important;
   position: relative !important;
   transition: 0.25s !important;
 }
-
+.workflow-extension-highlight-wrapper-tippy {
+  padding: 6px !important;
+}
 .workflow-extension-highlight-wrapper-tippy[data-animation='fade'][data-state='hidden'] {
   opacity: 0;
 }
