@@ -21,7 +21,7 @@
     text-decoration: none;
   }
   &.small {
-    font-size: 95%;
+    font-size: 1.52rem;
     padding: $global-padding / 2;
   }
   &.outlined {
@@ -75,7 +75,7 @@
     content: '×';
     display: inline-block;
     font-family: Verdana, Geneva, sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
     height: 19px;
     margin-bottom: 5px;
@@ -109,7 +109,7 @@
 
 .settingslabel {
   position: absolute;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 2px;
   top: 5px;
   right: 29px;
@@ -142,7 +142,7 @@
   background: none;
   color: #333333;
   font-family: inherit;
-  font-size: 12px;
+  font-size: 1.2rem;
 
   &:disabled {
     cursor: not-allowed !important;

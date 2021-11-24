@@ -9,6 +9,10 @@
 'typography',
 'visibility';
 
+html {
+  font-size: 62.5%;
+}
+
 * {
   &,
   &::before,
@@ -24,6 +28,10 @@ body {
   line-height: 1.4;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+h1 {
+  font-size: 1.8rem;
 }
 
 .contentcontainer {
@@ -131,7 +139,7 @@ body {
     border: 0 !important;
 
     .extension-container {
-      width: 334px;
+      width: 33.4rem;
       margin: 0 auto;
       border: 1px solid $medium-gray;
     }
@@ -257,4 +265,24 @@ hr {
 a[disabled] {
   pointer-events: none;
   opacity: .5;
+}
+
+.resizeFont {
+  text-align: right;
+  
+  color: #000000;
+
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 22px;
+  }
+
+  &--smallA {
+    font-size: 14px;
+  }
+  &--bigA {
+    font-size: 22px;
+  }
 }
