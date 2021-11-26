@@ -59,7 +59,7 @@ input, textarea {
 	&::placeholder {
 		color: $medium-gray;
 		font-family: $body-font-family;
-		font-size: 13px;
+		font-size: 1.3rem;
 		font-weight: normal;
 	}
 }
@@ -142,7 +142,7 @@ select {
 	clear: both;
 	color: $alert-color;
 	display: block;
-	font-size: 12px;
+	font-size: 1.2rem;
 	font-weight: bold;
 	margin-bottom: 1.14286rem;
 	margin-top: 1rem;
