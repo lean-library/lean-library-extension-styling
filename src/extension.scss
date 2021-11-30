@@ -30,10 +30,6 @@ body {
   overflow-y: auto;
 }
 
-h1 {
-  font-size: 1.8rem;
-}
-
 .contentcontainer {
   position: relative;
 }
@@ -139,7 +135,7 @@ h1 {
     border: 0 !important;
 
     .extension-container {
-      width: 33.4rem;
+      width: 334px;
       margin: 0 auto;
       border: 1px solid $medium-gray;
     }
