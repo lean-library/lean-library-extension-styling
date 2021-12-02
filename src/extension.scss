@@ -30,10 +30,6 @@ body {
   overflow-y: auto;
 }
 
-h1 {
-  font-size: 1.8rem;
-}
-
 .contentcontainer {
   position: relative;
 }
@@ -276,13 +272,13 @@ a[disabled] {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 2.2rem;
   }
 
   &--smallA {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   &--bigA {
-    font-size: 22px;
+    font-size: 2.2rem;
   }
 }
