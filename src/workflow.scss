@@ -30,6 +30,11 @@ $font-sans: 'Montserrat', sans-serif !important;
   position: absolute;
 }
 
+
+.workflow-extension-google-popup-header-buttons {
+  display: flex !important;
+}
+
 .workflow-extension-google-popup-header-text,
 .workflow-extension-google-popup-header-close {
   display: flex !important;
