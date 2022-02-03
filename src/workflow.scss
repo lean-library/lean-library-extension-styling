@@ -36,7 +36,8 @@ $font-sans: 'Montserrat', sans-serif !important;
 }
 
 .workflow-extension-google-popup-header-text,
-.workflow-extension-google-popup-header-close {
+.workflow-extension-google-popup-header-close,
+.workflow-extension-google-popup-header-pin {
   display: flex !important;
   align-items: center !important;
 }
@@ -48,11 +49,17 @@ $font-sans: 'Montserrat', sans-serif !important;
   color: #80FBFF;
 }
 
+.workflow-extension-google-popup-header-pin {
+  margin-right: 8px;
+  cursor: pointer !important;
+}
+
 .workflow-extension-google-popup-header-close {
   cursor: pointer !important;
 }
 
-.workflow-extension-google-popup-header-close span {
+.workflow-extension-google-popup-header-close span,
+.workflow-extension-google-popup-header-pin span {
   width: 16px;
   height: 16px;
 }
