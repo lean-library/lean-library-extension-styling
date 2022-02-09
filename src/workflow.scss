@@ -2,8 +2,7 @@ $font-sans: 'Montserrat', sans-serif !important;
 
 /* GOOGLE POPUP */
 .workflow-extension-google-popup {
-  max-width: 457px !important;
-  width: 100% !important;
+  width: 457px !important;
   display: flex;
   flex-direction: column !important;
   font-family: $font-sans;
@@ -25,11 +24,27 @@ $font-sans: 'Montserrat', sans-serif !important;
 }
 
 .workflow-extension-google-scholar-popup {
-  display: inline-block;
   padding: 15px;
   position: absolute;
 }
 
+.workflow-extension-google-popup-tabs {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 2;
+}
+
+.workflow-extension-google-popup-tab {
+  border: none;
+  background-color: transparent;
+  padding-bottom: 3px;
+  white-space: nowrap;
+}
+
+.workflow-extension-google-popup-go-right-arrow {
+  background: none;
+  border: none;
+}
 
 .workflow-extension-google-popup-header-buttons {
   display: flex !important;
@@ -67,7 +82,8 @@ $font-sans: 'Montserrat', sans-serif !important;
 /* subheader */
 .workflow-extension-google-popup-subheader {
   display: flex !important;
-  align-items: center !important;
+  justify-content: space-between !important;
+  flex-direction: row;
   padding: 0 15px !important;
   margin-top: 12px !important;
 }
@@ -81,43 +97,6 @@ $font-sans: 'Montserrat', sans-serif !important;
   font-weight: 600 !important;
   text-decoration: none !important;
   margin-left: 6px !important;
-}
-
-.workflow-extension-google-popup-confluence .workflow-extension-google-popup-subheader a{
-  color: #3eadfb !important;
-}
-
-.workflow-extension-google-popup-sharepoint .workflow-extension-google-popup-subheader a{
-  color: #018273 !important;
-}
-
-.workflow-extension-google-popup-custom .workflow-extension-google-popup-subheader a{
-  color: #46af89 !important;
-}
-
-.workflow-extension-google-popup-worldcat .workflow-extension-google-popup-subheader a{
-  color: #4f585e !important;
-}
-
-.workflow-extension-google-popup-alfresco .workflow-extension-google-popup-subheader a{
-  color: #76BB21 !important;
-}
-
-.workflow-extension-google-popup-ebsco .workflow-extension-google-popup-subheader a,
-.workflow-extension-google-popup-exlibris .workflow-extension-google-popup-subheader a {
-  color: #002F56 !important;
-}
-
-.workflow-extension-google-popup-tdnet .workflow-extension-google-popup-subheader a {
-  color: #ACC330 !important;
-}
-
-.workflow-extension-google-popup-tripdatabase .workflow-extension-google-popup-subheader a {
-  color: #533764 !important;
-}
-
-.workflow-extension-google-popup-jove .workflow-extension-google-popup-subheader a {
-  color: #2183ed !important;
 }
 
 /* source */
@@ -256,11 +235,6 @@ $font-sans: 'Montserrat', sans-serif !important;
   font-size: 15px !important;
   color: rgb(5, 5, 5) !important;
 }
-
-/* .workflow-extension-google-popup-login a{
-  color: rgb(62, 173, 251) !important;
-  text-decoration: none !important;
-} */
 
 .workflow-extension-alfresco-input-wrapper {
   display: flex !important;
