@@ -31,8 +31,10 @@ $font-sans: 'Montserrat', sans-serif !important;
 
 .workflow-extension-google-popup-tabs {
   display: flex;
+  align-items: flex-start;
   justify-content: space-evenly;
   flex-grow: 2;
+  gap: 24px;
 }
 
 .workflow-extension-google-popup-tab {
@@ -40,11 +42,16 @@ $font-sans: 'Montserrat', sans-serif !important;
   background-color: transparent;
   padding-bottom: 3px;
   white-space: nowrap;
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 0.4;
 }
 
 .workflow-extension-google-popup-go-right-arrow {
   background: none;
   border: none;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .workflow-extension-google-popup-header-buttons {
@@ -59,10 +66,11 @@ $font-sans: 'Montserrat', sans-serif !important;
 }
 
 .workflow-extension-google-popup-header-text span {
-  font-size: 15px !important;
-  font-weight: 500 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
   margin-left: 8px !important;
   color: #80FBFF;
+  padding: 6px 0;
 }
 
 .workflow-extension-google-popup-header-pin {
@@ -85,6 +93,7 @@ $font-sans: 'Montserrat', sans-serif !important;
   display: flex !important;
   justify-content: space-between !important;
   flex-direction: row;
+  align-items: flex-end;
   padding: 0 15px !important;
   margin-top: 12px !important;
 }
@@ -101,6 +110,9 @@ $font-sans: 'Montserrat', sans-serif !important;
 }
 
 /* source */
+.workflow-extension-google-popup .workflow-extension-google-popup-source {
+  padding: 16px;
+}
 .workflow-extension-google-popup .workflow-extension-google-popup-source:not(:last-child),
 .workflow-extension-google-popup .workflow-extension-google-popup-source-error:not(:last-child) {
   border-bottom: 3px solid rgb(242, 242, 242);
@@ -109,8 +121,11 @@ $font-sans: 'Montserrat', sans-serif !important;
 .workflow-extension-google-popup-result{
   display: flex !important;
   flex-wrap: nowrap !important;
-  padding: 15px !important;
-  border-bottom: 1px solid rgba(242, 242, 242, 0.75) !important;
+  padding-bottom: 8px !important;
+}
+
+.workflow-extension-google-popup-result-image {
+  padding-right: 8px;
 }
 
 .workflow-extension-google-popup-result-image img{
@@ -124,7 +139,7 @@ $font-sans: 'Montserrat', sans-serif !important;
 }
 
 .workflow-extension-google-popup-result-text {
-  padding-left: 8px !important;
+  padding-bottom: 4px;
   font-size: 14px !important;
 }
 
@@ -145,7 +160,6 @@ $font-sans: 'Montserrat', sans-serif !important;
 .workflow-extension-google-popup-footer {
   display: flex !important;
   align-items: center !important;
-  padding: 15px !important;
 }
 .workflow-extension-google-popup-footer a {
   font-size: 12px !important;
