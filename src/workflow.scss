@@ -1,16 +1,17 @@
 $font-sans: 'Montserrat', sans-serif !important;
+$font-roboto: 'Roboto', sans-serif !important;
 
 /* GOOGLE POPUP */
 .workflow-extension-google-popup {
+
   width: 457px !important;
   display: flex;
   flex-direction: column !important;
-  font-family: $font-sans;
+  font-family: $font-roboto;
   margin-bottom: 15px !important;
-  border-radius: 6px !important;
-  -webkit-box-shadow: 0px 4px 16px 0px rgba(140, 140, 140, 0.4);
-  -moz-box-shadow: 0px 4px 16px 0px rgba(140, 140, 140, 0.4);
-  box-shadow: 0px 4px 16px 0px rgba(140, 140, 140, 0.4);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* header */
@@ -18,13 +19,11 @@ $font-sans: 'Montserrat', sans-serif !important;
   display: flex !important;
   justify-content: space-between !important;
   padding: 6px 15px !important;
-  border-top-left-radius: 6px !important;
-  border-top-right-radius: 6px !important;
   background: #3eadfb;
 }
 
 .workflow-extension-google-scholar-popup {
-  display: inline-block;
+  display: inline-block !important;
   padding: 15px;
   position: absolute;
 }
@@ -66,7 +65,7 @@ $font-sans: 'Montserrat', sans-serif !important;
 }
 
 .workflow-extension-google-popup-header-text span {
-  font-size: 16px !important;
+  font-size: 14px !important;
   font-weight: 700 !important;
   margin-left: 8px !important;
   color: #80FBFF;
@@ -140,16 +139,17 @@ $font-sans: 'Montserrat', sans-serif !important;
 
 .workflow-extension-google-popup-result-text {
   padding-bottom: 4px;
-  font-size: 14px !important;
 }
 
-.workflow-extension-google-popup-result-title a{
-  font-weight: 600 !important;
+.workflow-extension-google-popup-result-title a {
+  font-size: 12px;
+  font-weight: 700 !important;
   text-decoration: none !important;
   color: rgb(43, 43, 43) !important;
 }
 
 .workflow-extension-google-popup-result-summary a{
+  font-size: 10px;
   color: rgb(57, 57, 57) !important;
   margin: 5px 0 !important;
   word-break: break-word !important;
@@ -162,9 +162,9 @@ $font-sans: 'Montserrat', sans-serif !important;
   align-items: center !important;
 }
 .workflow-extension-google-popup-footer a {
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  text-decoration: none !important;
+  font-size: 8px !important;
+  font-weight: 500 !important;
+  text-decoration: underline !important;
 }
 
 .workflow-extension-google-popup-footer-confluence a {
@@ -206,7 +206,7 @@ $font-sans: 'Montserrat', sans-serif !important;
 
 /* error */
 .workflow-extension-google-popup-error {
-  padding: 10px 15px !important;
+  padding: 16px;
   font-size: 15px !important;
   color: rgb(5, 5, 5) !important;
 }
@@ -298,7 +298,7 @@ $font-sans: 'Montserrat', sans-serif !important;
 .workflow-extension-small-popup-header {
   display: flex !important;
   justify-content: space-between !important;
-  padding: 6px 15px !important;
+  padding: 6px 8px !important;
   font-size: 15px !important;
   border-top-left-radius: 6px !important;
   border-top-right-radius: 6px !important;
@@ -368,13 +368,13 @@ $font-sans: 'Montserrat', sans-serif !important;
   font-size: 14px !important;
 }
 
-.workflow-extension-small-popup-result-title a{
+.workflow-extension-small-popup-result-title a {
   font-weight: 600 !important;
   text-decoration: none !important;
   color: rgb(43, 43, 43) !important;
 }
 
-.workflow-extension-small-popup-result-summary a{
+.workflow-extension-small-popup-result-summary a {
   color: rgb(57, 57, 57) !important;
   margin: 5px 0 !important;
   word-break: break-word !important;
