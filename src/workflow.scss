@@ -145,6 +145,8 @@ $font-roboto: 'Roboto', sans-serif !important;
 
 /* source */
 .workflow-extension-google-popup .workflow-extension-google-popup-source {
+  height: 410px;
+  overflow-y: scroll;
   padding: 16px;
 }
 .workflow-extension-google-popup .workflow-extension-google-popup-source:not(:last-child),
