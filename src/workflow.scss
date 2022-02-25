@@ -1344,6 +1344,13 @@ animation: workflow-pulse 1s linear infinite;
     margin:0 auto !important;
   }
 }
+
+@media only screen and (max-width: 1460px) {
+  .workflow-extension-google-popup {
+    min-width: 280px !important;
+  }
+}
+
 @media only screen and (max-width: 1366px) {
   /* .workflow-extension-message-google .workflow-extension-subheader {
       padding: .6em;
@@ -1357,6 +1364,16 @@ animation: workflow-pulse 1s linear infinite;
   }
   .workflow-extension-big-popup-body-content.iframe-multiple {
     max-width: 73% !important;
+  }
+
+  .workflow-extension-google-popup {
+    min-width: 265px !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .workflow-extension-google-popup {
+    min-width: 240px !important;
   }
 }
 
