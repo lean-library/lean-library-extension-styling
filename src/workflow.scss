@@ -1,17 +1,23 @@
 $font-sans: 'Montserrat', sans-serif !important;
+$font-roboto: 'Roboto', sans-serif !important;
 
 /* GOOGLE POPUP */
 .workflow-extension-google-popup {
-  max-width: 457px !important;
   width: 100% !important;
+  max-width: 430px;
+  min-width: 370px !important;
   display: flex;
   flex-direction: column !important;
-  font-family: $font-sans;
+  font-family: $font-roboto;
   margin-bottom: 15px !important;
-  border-radius: 6px !important;
-  -webkit-box-shadow: 0px 4px 16px 0px rgba(140, 140, 140, 0.4);
-  -moz-box-shadow: 0px 4px 16px 0px rgba(140, 140, 140, 0.4);
-  box-shadow: 0px 4px 16px 0px rgba(140, 140, 140, 0.4);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.google-popup-skeleton {
+  width: 95%;
+  display: inline-flex;
 }
 
 /* header */
@@ -19,35 +25,99 @@ $font-sans: 'Montserrat', sans-serif !important;
   display: flex !important;
   justify-content: space-between !important;
   padding: 6px 15px !important;
-  border-top-left-radius: 6px !important;
-  border-top-right-radius: 6px !important;
   background: #3eadfb;
 }
 
 .workflow-extension-google-scholar-popup {
-  display: inline-block;
+  display: inline-block !important;
   padding: 15px;
   position: absolute;
 }
 
+.workflow-extension-google-popup-tabs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-grow: 2;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.workflow-extension-google-popup-tab {
+
+  button {
+    border: none;
+    background-color: transparent;
+    padding: 0 0 3px 0 !important;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.4;
+  }
+}
+
+.workflow-extension-google-popup-left-arrow {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  left: 0;
+  button {
+    text-align: left;
+  }
+}
+.workflow-extension-google-popup-right-arrow {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  right: 0;
+  button {
+    text-align: right;
+  }
+}
+
+.workflow-extension-google-popup-right-arrow button,
+.workflow-extension-google-popup-left-arrow button {
+  width: 15px !important;
+  min-width: fit-content;
+  background: none;
+  border: none;
+  padding: 0 !important;
+  &:hover {
+    background: none;
+  }
+}
+
+.workflow-extension-google-popup-header-buttons {
+  display: flex !important;
+}
+
 .workflow-extension-google-popup-header-text,
-.workflow-extension-google-popup-header-close {
+.workflow-extension-google-popup-header-close,
+.workflow-extension-google-popup-header-pin {
   display: flex !important;
   align-items: center !important;
 }
 
 .workflow-extension-google-popup-header-text span {
-  font-size: 15px !important;
-  font-weight: 500 !important;
-  margin-left: 8px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
   color: #80FBFF;
+  padding: 6px 0;
+}
+
+.workflow-extension-google-popup-header-pin {
+  margin-right: 8px;
+  cursor: pointer !important;
 }
 
 .workflow-extension-google-popup-header-close {
   cursor: pointer !important;
 }
 
-.workflow-extension-google-popup-header-close span {
+.workflow-extension-google-popup-header-close span,
+.workflow-extension-google-popup-header-pin span {
   width: 16px;
   height: 16px;
 }
@@ -55,8 +125,10 @@ $font-sans: 'Montserrat', sans-serif !important;
 /* subheader */
 .workflow-extension-google-popup-subheader {
   display: flex !important;
-  align-items: center !important;
-  padding: 0 15px !important;
+  justify-content: space-between !important;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 0 16px !important;
   margin-top: 12px !important;
 }
 
@@ -71,44 +143,12 @@ $font-sans: 'Montserrat', sans-serif !important;
   margin-left: 6px !important;
 }
 
-.workflow-extension-google-popup-confluence .workflow-extension-google-popup-subheader a{
-  color: #3eadfb !important;
-}
-
-.workflow-extension-google-popup-sharepoint .workflow-extension-google-popup-subheader a{
-  color: #018273 !important;
-}
-
-.workflow-extension-google-popup-custom .workflow-extension-google-popup-subheader a{
-  color: #46af89 !important;
-}
-
-.workflow-extension-google-popup-worldcat .workflow-extension-google-popup-subheader a{
-  color: #4f585e !important;
-}
-
-.workflow-extension-google-popup-alfresco .workflow-extension-google-popup-subheader a{
-  color: #76BB21 !important;
-}
-
-.workflow-extension-google-popup-ebsco .workflow-extension-google-popup-subheader a,
-.workflow-extension-google-popup-exlibris .workflow-extension-google-popup-subheader a {
-  color: #002F56 !important;
-}
-
-.workflow-extension-google-popup-tdnet .workflow-extension-google-popup-subheader a {
-  color: #ACC330 !important;
-}
-
-.workflow-extension-google-popup-tripdatabase .workflow-extension-google-popup-subheader a {
-  color: #533764 !important;
-}
-
-.workflow-extension-google-popup-jove .workflow-extension-google-popup-subheader a {
-  color: #2183ed !important;
-}
-
 /* source */
+.workflow-extension-google-popup .workflow-extension-google-popup-source {
+  height: 410px;
+  overflow-y: auto;
+  padding: 16px;
+}
 .workflow-extension-google-popup .workflow-extension-google-popup-source:not(:last-child),
 .workflow-extension-google-popup .workflow-extension-google-popup-source-error:not(:last-child) {
   border-bottom: 3px solid rgb(242, 242, 242);
@@ -117,8 +157,11 @@ $font-sans: 'Montserrat', sans-serif !important;
 .workflow-extension-google-popup-result{
   display: flex !important;
   flex-wrap: nowrap !important;
-  padding: 15px !important;
-  border-bottom: 1px solid rgba(242, 242, 242, 0.75) !important;
+  padding-bottom: 8px !important;
+}
+
+.workflow-extension-google-popup-result-image {
+  padding-right: 8px;
 }
 
 .workflow-extension-google-popup-result-image img{
@@ -132,17 +175,18 @@ $font-sans: 'Montserrat', sans-serif !important;
 }
 
 .workflow-extension-google-popup-result-text {
-  padding-left: 8px !important;
-  font-size: 14px !important;
+  padding-bottom: 4px;
 }
 
-.workflow-extension-google-popup-result-title a{
-  font-weight: 600 !important;
+.workflow-extension-google-popup-result-title a {
+  font-size: 12px;
+  font-weight: 700 !important;
   text-decoration: none !important;
   color: rgb(43, 43, 43) !important;
 }
 
 .workflow-extension-google-popup-result-summary a{
+  font-size: 10px;
   color: rgb(57, 57, 57) !important;
   margin: 5px 0 !important;
   word-break: break-word !important;
@@ -153,12 +197,11 @@ $font-sans: 'Montserrat', sans-serif !important;
 .workflow-extension-google-popup-footer {
   display: flex !important;
   align-items: center !important;
-  padding: 15px !important;
 }
 .workflow-extension-google-popup-footer a {
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  text-decoration: none !important;
+  font-size: 8px !important;
+  font-weight: 500 !important;
+  text-decoration: underline !important;
 }
 
 .workflow-extension-google-popup-footer-confluence a {
@@ -200,8 +243,9 @@ $font-sans: 'Montserrat', sans-serif !important;
 
 /* error */
 .workflow-extension-google-popup-error {
-  padding: 10px 15px !important;
-  font-size: 15px !important;
+  padding: 16px;
+  font-size: 10px !important;
+  font-weight: 400;
   color: rgb(5, 5, 5) !important;
 }
 
@@ -244,11 +288,6 @@ $font-sans: 'Montserrat', sans-serif !important;
   font-size: 15px !important;
   color: rgb(5, 5, 5) !important;
 }
-
-/* .workflow-extension-google-popup-login a{
-  color: rgb(62, 173, 251) !important;
-  text-decoration: none !important;
-} */
 
 .workflow-extension-alfresco-input-wrapper {
   display: flex !important;
@@ -297,7 +336,7 @@ $font-sans: 'Montserrat', sans-serif !important;
 .workflow-extension-small-popup-header {
   display: flex !important;
   justify-content: space-between !important;
-  padding: 6px 15px !important;
+  padding: 6px 8px !important;
   font-size: 15px !important;
   border-top-left-radius: 6px !important;
   border-top-right-radius: 6px !important;
@@ -367,13 +406,13 @@ $font-sans: 'Montserrat', sans-serif !important;
   font-size: 14px !important;
 }
 
-.workflow-extension-small-popup-result-title a{
+.workflow-extension-small-popup-result-title a {
   font-weight: 600 !important;
   text-decoration: none !important;
   color: rgb(43, 43, 43) !important;
 }
 
-.workflow-extension-small-popup-result-summary a{
+.workflow-extension-small-popup-result-summary a {
   color: rgb(57, 57, 57) !important;
   margin: 5px 0 !important;
   word-break: break-word !important;
@@ -1305,19 +1344,35 @@ animation: workflow-pulse 1s linear infinite;
     margin:0 auto !important;
   }
 }
-@media only screen and (max-width: 1366px) {
-  /* .workflow-extension-message-google .workflow-extension-subheader {
-      padding: .6em;
+
+@media only screen and (max-width: 1440px) {
+  .workflow-extension-google-popup {
+    max-width: 295px !important;
+    min-width: 280px !important;
   }
-  .workflow-extension-message-google .workflow-extension-message-result {
-      padding: 1em .6em;
-  } */
+
+}
+
+@media only screen and (max-width: 1366px) {
+
   .workflow-extension-big-popup-body-content {
     max-width:100% !important;
     margin:0 auto !important;
   }
   .workflow-extension-big-popup-body-content.iframe-multiple {
     max-width: 73% !important;
+  }
+
+  .workflow-extension-google-popup {
+    max-width: 265px !important;
+    min-width: 245px !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .workflow-extension-google-popup {
+    max-width: 240px !important;
+    min-width: 220px !important;
   }
 }
 
