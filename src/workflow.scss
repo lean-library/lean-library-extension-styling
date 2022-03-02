@@ -1345,19 +1345,16 @@ animation: workflow-pulse 1s linear infinite;
   }
 }
 
-@media only screen and (max-width: 1460px) {
+@media only screen and (max-width: 1440px) {
   .workflow-extension-google-popup {
-    min-width: 280px !important;
+    max-width: 277px !important;
+    min-width: 250px !important;
   }
+
 }
 
 @media only screen and (max-width: 1366px) {
-  /* .workflow-extension-message-google .workflow-extension-subheader {
-      padding: .6em;
-  }
-  .workflow-extension-message-google .workflow-extension-message-result {
-      padding: 1em .6em;
-  } */
+
   .workflow-extension-big-popup-body-content {
     max-width:100% !important;
     margin:0 auto !important;
@@ -1367,13 +1364,15 @@ animation: workflow-pulse 1s linear infinite;
   }
 
   .workflow-extension-google-popup {
-    min-width: 265px !important;
+    max-width: 265px !important;
+    min-width: 245px !important;
   }
 }
 
 @media only screen and (max-width: 1280px) {
   .workflow-extension-google-popup {
-    min-width: 240px !important;
+    max-width: 240px !important;
+    min-width: 220px !important;
   }
 }
 
