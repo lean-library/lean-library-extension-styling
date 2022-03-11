@@ -5,7 +5,7 @@ $font-roboto: 'Roboto', sans-serif !important;
 .workflow-extension-google-popup {
   width: 100% !important;
   max-width: 430px;
-  min-width: 370px !important;
+  min-width: 430px !important;
   display: flex;
   flex-direction: column !important;
   font-family: $font-roboto;
@@ -152,6 +152,11 @@ $font-roboto: 'Roboto', sans-serif !important;
 .workflow-extension-google-popup .workflow-extension-google-popup-source:not(:last-child),
 .workflow-extension-google-popup .workflow-extension-google-popup-source-error:not(:last-child) {
   border-bottom: 3px solid rgb(242, 242, 242);
+}
+
+.workflow-extension-google-popup-result-container {
+  min-height: 400px;
+  height: auto;
 }
 /* result */
 .workflow-extension-google-popup-result{
