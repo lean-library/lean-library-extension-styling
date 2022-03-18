@@ -145,7 +145,7 @@ $font-roboto: 'Roboto', sans-serif !important;
 
 /* source */
 .workflow-extension-google-popup .workflow-extension-google-popup-source {
-  height: 410px;
+  max-height: 410px;
   overflow-y: auto;
   padding: 16px;
 }
@@ -155,7 +155,6 @@ $font-roboto: 'Roboto', sans-serif !important;
 }
 
 .workflow-extension-google-popup-result-container {
-  min-height: 400px;
   height: auto;
 }
 /* result */
@@ -200,6 +199,7 @@ $font-roboto: 'Roboto', sans-serif !important;
 
 /* footer */
 .workflow-extension-google-popup-footer {
+  margin-top: 10px !important;
   display: flex !important;
   align-items: center !important;
 }
