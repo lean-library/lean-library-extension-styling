@@ -153,17 +153,13 @@ $font-roboto: 'Roboto', sans-serif !important;
   padding: 16px;
 }
 
-.workflow-extension-google-popup-source{
-  margin-right: 12px;
-}
-
 .workflow-extension-google-popup .workflow-extension-google-popup-source:not(:last-child),
 .workflow-extension-google-popup .workflow-extension-google-popup-source-error:not(:last-child) {
   border-bottom: 3px solid rgb(242, 242, 242);
 }
 
-.workflow-extension-google-popup-source::-webkit-scrollbar {
-  width: 11px;
+.workflow-extension-google-popup-source{
+  margin-right: 12px;
 }
 
 /* Track */
@@ -178,13 +174,9 @@ $font-roboto: 'Roboto', sans-serif !important;
 }
 /* Thumb */
 .workflow-extension-google-popup-source::-webkit-scrollbar-thumb {
-  background: #9e9e9e; 
+  background-color: transparent;
 }
 
-/* Handle on hover */
-.workflow-extension-google-popup-source::-webkit-scrollbar-thumb:hover {
-  background: #636363; 
-}
 .workflow-extension-google-popup-result-container {
   height: auto;
 }
