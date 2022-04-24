@@ -116,7 +116,10 @@ $font-roboto: 'Roboto', sans-serif !important;
   cursor: pointer !important;
 }
 
-.workflow-extension-google-popup-header-close span,
+.workflow-extension-google-popup-header-close span {
+  width: 24px;
+  height: 24px;
+}
 .workflow-extension-google-popup-header-pin span {
   width: 16px;
   height: 16px;
