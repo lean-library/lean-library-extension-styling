@@ -240,6 +240,32 @@ hr {
       width: 55%;
     }
   }
+
+  .accordian__zotero-btns {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5%;
+  }
+
+  .accordian__zotero-login-btn {
+    color: #ffffff;
+    background-color: #739b73;
+    padding: 12px;
+    width: 128px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+  }
+
+  .accordian__zotero-vrl-btn {
+    color: #403a3a;
+    background-color: #ffffff;
+    padding: 12px;
+    width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-weight: 700;
+  }
 }
 
 .link--advanced-settings,
