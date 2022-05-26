@@ -22,7 +22,7 @@ header {
   background-color: $header-bg-color;
 }
 
-a:not(.button, .accordian__zotero-btn),
+a:not(.button),
 .button--anchor-style {
   @include link-new-window($anchor-color);
   color: $anchor-color;

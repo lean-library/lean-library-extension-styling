@@ -284,6 +284,12 @@ hr {
       &:hover {
         background-color: #f5f5f5;
       }
+
+      // hide the external link arrow
+      &::after {
+        max-width: 0;
+        max-height: 0;
+      }
     }
   }
 
