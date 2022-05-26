@@ -76,6 +76,7 @@ body {
     label {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
   }
 
@@ -247,43 +248,42 @@ hr {
     gap: 5%;
   }
 
-  .accordian__zotero {
+  .accordian__zotero-btn {
     font-size: 9px;
-    color: #ffffff;
     width: 96px;
     height: 24px;
     border: none;
     border-radius: 7px;
     font-weight: 700;
+    cursor: pointer;
 
-    &-login-btn {
+    &--login {
       background-color: #00a980;
       &:hover {
         background-color: #009974;
       }
     }
-    &-logout-btn {
+
+    &--logout {
       background-color: #be3737;
       &:hover {
         background-color: #a42929;
       }
     }
-  }
 
-  .accordian__zotero-vrl-btn {
-    font-size: 9px;
-    color: #000000;
-    background-color: #ffffff;
-    width: 120px;
-    height: 24px;
-    border: 1px solid #e8e8e8;
-    border-radius: 7px;
-    font-weight: 700;
-
-    &:hover {
-      background-color: #f5f5f5;
+    &--mylibrary {
+      color: #000000;
+      background-color: #ffffff;
+      width: 120px;
+      border: 1px solid #e8e8e8;
+      text-decoration: none;
+  
+      &:hover {
+        background-color: #f5f5f5;
+      }
     }
   }
+
 }
 
 .link--advanced-settings,
