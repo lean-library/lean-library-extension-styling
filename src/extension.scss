@@ -249,6 +249,9 @@ hr {
   }
 
   .accordian__zotero-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 9px;
     width: 96px;
     height: 24px;
