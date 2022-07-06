@@ -8,6 +8,7 @@ gulp.task('styles', () => {
     'src/beta.scss',
     'src/popup-skip-link.scss',
     'src/workflow.scss',
+    'src/toastify.scss',
   ])
     .pipe($.plumber())
     .pipe($.sass.sync({
