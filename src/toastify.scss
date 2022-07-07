@@ -5,8 +5,8 @@
 --toastify-icon-color-success: var(--toastify-color-success);
 --toastify-icon-color-error: var(--toastify-color-error);
 --toastify-toast-width: 184px;
---toastify-toast-min-height: 84px;
---toastify-toast-max-height: 800px;
+--toastify-toast-height: 84px;
+--toastify-toast-max-height: 84px;
 --toastify-font-family: $font-roboto;
 --toastify-z-index: 9999;
 --toastify-text-color-success: #2F7037;
@@ -23,6 +23,8 @@
   width: var(--toastify-toast-width);
   box-sizing: border-box;
   color: #fff;
+  height: var(--toastify-toast-height);
+  width: var(--toastify-toast-width);
 }
 
 .Toastify__toast-container--bottom-right {
@@ -50,8 +52,6 @@
 
 .Toastify__toast {
   position: relative;
-  min-height: var(--toastify-toast-min-height);
-  width: var(--toastify-toast-width);
   box-sizing: border-box;
   margin-bottom: 1rem;
   padding: 8px;
@@ -73,7 +73,6 @@
   margin: auto 0;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 6px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -85,6 +84,8 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+  margin: 0px;
+  padding-top: 10px;
 }
 
 .Toastify__toast-body  > div > div >p.popup-text {
@@ -92,6 +93,7 @@
   font-weight: 400;
   font-size: 10px;
   line-height: 16px;
+  margin: 0px;
 }
 
 .Toastify__toast-body > div > div > a {
@@ -101,6 +103,7 @@
   line-height: 24px;
   text-decoration-line: underline;
   color: #3B55AF;
+  margin: 0px;
 }
 
 .Toastify__toast-body > div:last-child {
