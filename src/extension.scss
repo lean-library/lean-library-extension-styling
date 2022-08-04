@@ -241,6 +241,21 @@ hr {
       width: 55%;
     }
   }
+  
+  .accordian__zotero-info {
+    &__message {
+      margin-bottom: 10px;
+
+      &--error {
+        color: #be3737;
+      }
+
+      &--success {
+        color: #00a980;
+      }
+    }
+
+  }
 
   .accordian__zotero-btns {
     display: flex;
