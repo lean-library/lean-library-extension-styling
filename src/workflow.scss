@@ -886,8 +886,11 @@ $font-roboto: 'Roboto', sans-serif !important;
 }
 
 .workflow-extension-content-title {
-  padding:10px !important;
+  padding: 10px !important;
   flex-grow: 1 !important;
+  text-decoration: none !important;
+  font-size: 13px !important;
+  color: #222222 !important;
 }
 
 .workflow-extension-content-title:focus {
